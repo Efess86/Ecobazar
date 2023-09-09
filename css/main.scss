@@ -1,0 +1,45 @@
+@import './samples/samples.scss';
+
+// delete body below then finish preporations
+body {
+	padding: 40px;
+}
+
+// === small btns =====
+.btn-small-fill {
+	@extend %btnSmallFill;
+}
+
+.btn-small-border {
+	@extend %btnSmallBorder;
+}
+
+.btn-small-ghost {
+	@extend %btnSmallGhost;
+}
+
+// === medium btns =====
+.btn-medium-fill {
+	@extend %btnSmallFill;
+}
+
+.btn-medium-border {
+	@extend %btnSmallBorder;
+}
+
+.btn-medium-ghost {
+	@extend %btnSmallGhost;
+}
+
+// === large btns =====
+.btn-large-fill {
+	@extend %btnSmallFill;
+}
+
+.btn-large-border {
+	@extend %btnSmallBorder;
+}
+
+.btn-large-ghost {
+	@extend %btnSmallGhost;
+}

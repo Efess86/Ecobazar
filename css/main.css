@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.btn-large-fill, .btn-medium-fill, .btn-small-fill {
+  min-width: 102px;
+  min-height: 36px;
+  background-color: #00B207;
+  padding: 10px 24px;
+  font: 600 12px Poppins;
+  color: #FFFFFF;
+  border-radius: 43px;
+  transition: 0.3s ease-in-out;
+}
+.btn-large-fill:hover, .btn-medium-fill:hover, .btn-small-fill:hover {
+  background-color: #2C742F;
+}
+
+.btn-large-border, .btn-medium-border, .btn-small-border {
+  min-width: 127px;
+  min-height: 36px;
+  background-color: transparent;
+  padding: 10px 24px;
+  font: 600 12px Poppins;
+  color: #00B207;
+  border: 2px solid #00B207;
+  border-radius: 43px;
+  transition: 0.3s ease-in-out;
+}
+.btn-large-border:hover, .btn-medium-border:hover, .btn-small-border:hover {
+  color: #2C742F;
+  border: 2px solid #2C742F;
+}
+
+.btn-large-ghost, .btn-medium-ghost, .btn-small-ghost {
+  min-width: 122px;
+  min-height: 36px;
+  background-color: rgba(0, 178, 7, 0.1803921569);
+  padding: 10px 24px;
+  font: 600 12px Poppins;
+  color: #00B207;
+  border-radius: 43px;
+  transition: 0.3s ease-in-out;
+}
+.btn-large-ghost:hover, .btn-medium-ghost:hover, .btn-small-ghost:hover {
+  color: #2C742F;
+  background-color: rgba(0, 178, 7, 0.4196078431);
+}
+
+body {
+  padding: 40px;
+}/*# sourceMappingURL=main.css.map */

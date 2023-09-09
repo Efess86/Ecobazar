@@ -1,0 +1,161 @@
+@import '../variables/variables.scss';
+
+
+// ============ Main buttons ==============
+
+// ------- Small buttons -------
+%btnSmallFill {
+	min-width: 102px;
+	min-height: 36px;
+	background-color: $primaryColor;
+	padding: 10px 24px;
+	font: 600 12px $font-family;
+	color: $whiteColor;
+	border-radius: 43px;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		background-color: $hardPrimaryColor;
+	}
+}
+
+%btnSmallBorder {
+	min-width: 127px;
+	min-height: 36px;
+	background-color: transparent;
+	padding: 10px 24px;
+	font: 600 12px $font-family;
+	color: $primaryColor;
+	border: 2px solid $primaryColor;
+	border-radius: 43px;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		color: $hardPrimaryColor;
+		border: 2px solid $hardPrimaryColor;
+	}
+}
+
+%btnSmallGhost {
+	min-width: 122px;
+	min-height: 36px;
+	background-color: #00b2072e;
+	padding: 10px 24px;
+	font: 600 12px $font-family;
+	color: $primaryColor;
+	border-radius: 43px;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		color: $hardPrimaryColor;
+		background-color: #00b2076b;
+
+	}
+}
+
+
+// ------- Medium buttons -------
+%btnMediumFill {
+	min-width: 145px;
+	min-height: 43px;
+	background-color: $primaryColor;
+	padding: 14px 32px;
+	font: 600 14px $font-family;
+	color: $whiteColor;
+	border-radius: 43px;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		background-color: $hardPrimaryColor;
+	}
+}
+
+%btnMediumBorder {
+	min-width: 174px;
+	min-height: 45px;
+	background-color: transparent;
+	padding: 10px 24px;
+	font: 600 14px $font-family;
+	color: $primaryColor;
+	border: 2px solid $primaryColor;
+	border-radius: 43px;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		color: $hardPrimaryColor;
+		border: 2px solid $hardPrimaryColor;
+	}
+}
+
+%btnMediumGhost {
+	min-width: 122px;
+	min-height: 36px;
+	background-color: #00b2072e;
+	padding: 10px 24px;
+	font: 600 14px $font-family;
+	color: $primaryColor;
+	border-radius: 43px;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		color: $hardPrimaryColor;
+		background-color: #00b2076b;
+
+	}
+}
+
+
+
+// ------- Large buttons -------
+%btnLargeFill {
+	min-width: 152px;
+	min-height: 51px;
+	background-color: $primaryColor;
+	padding: 16px 40px;
+	font: 600 16px $font-family;
+	color: $whiteColor;
+	border-radius: 43px;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		background-color: $hardPrimaryColor;
+	}
+}
+
+%btnLargeBorder {
+	min-width: 152px;
+	min-height: 51px;
+	background-color: transparent;
+	padding: 16px 40px;
+	font: 600 16px $font-family;
+	color: $primaryColor;
+	border: 2px solid $primaryColor;
+	border-radius: 43px;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		color: $hardPrimaryColor;
+		border: 2px solid $hardPrimaryColor;
+	}
+}
+
+.asd {
+	margin: 20px;
+}
+
+%btnLargeGhost {
+	min-width: 152px;
+	min-height: 51px;
+	background-color: #00b2072e;
+	padding: 16px 40px;
+	font: 600 16px $font-family;
+	color: $primaryColor;
+	border-radius: 43px;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		color: $hardPrimaryColor;
+		background-color: #00b2076b;
+
+	}
+}
