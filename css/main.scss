@@ -1,4 +1,4 @@
-@import './samples/samples.scss';
+@import './samples/buttons.scss';
 
 // delete body below then finish preporations
 body {
@@ -20,26 +20,38 @@ body {
 
 // === medium btns =====
 .btn-medium-fill {
-	@extend %btnSmallFill;
+	@extend %btnMediumFill;
 }
 
 .btn-medium-border {
-	@extend %btnSmallBorder;
+	@extend %btnMediumBorder;
 }
 
 .btn-medium-ghost {
-	@extend %btnSmallGhost;
+	@extend %btnMediumGhost;
 }
 
 // === large btns =====
 .btn-large-fill {
-	@extend %btnSmallFill;
+	@extend %btnLargeFill;
 }
 
 .btn-large-border {
-	@extend %btnSmallBorder;
+	@extend %btnLargeBorder;
 }
 
 .btn-large-ghost {
-	@extend %btnSmallGhost;
+	@extend %btnLargeGhost;
+}
+
+.btn-icon-small {
+	@extend %btnIconSmall;
+}
+
+.btn-icon-medium {
+	@extend %btnIconMedium;
+}
+
+.btn-icon-large {
+	@extend %btnIconLarge;
 }
