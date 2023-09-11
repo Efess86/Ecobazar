@@ -1,0 +1,9 @@
+.star {
+	cursor: pointer;
+	font-size: 24px;
+	margin-right: 5px;
+}
+
+.star.active {
+	color: gold;
+}
