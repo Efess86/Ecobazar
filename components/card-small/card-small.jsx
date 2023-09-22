@@ -1,15 +1,18 @@
 import './card-small.scss';
 
-export const test = (
-	<div class="card-small">
-		<div class="slm-card-img">
-			<img src="/assets/images/chanise_cabbage.png" alt="chanise cabbage"></img>
+export const cardSmall = (title, price, imgUrl) => {
+
+	return (
+		<div class="card-small">
+			<div class="slm-card-img">
+				<img src={imgUrl}></img>
+			</div>
+			<div class="slm-card-info">
+				<h3>{title}</h3>
+				<p>{price}</p>
+				<div class="star-rating"></div>
+			</div>
 		</div>
-		<div class="slm-card-info">
-			<h3>Chanise Cabbage</h3>
-			<p>$14.99</p>
-			<div class="star-rating"></div>
-		</div>
-	</div>
-);
+	)
+};
 
