@@ -1,7 +1,7 @@
 import './card-small.scss';
+import { starRating } from '../star-rating/star-rating';
 
-export const cardSmall = (title, price, imgUrl) => {
-
+export const cardSmall = ({ title, price, imgUrl, rating }) => {
 	return (
 		<div class="card-small">
 			<div class="slm-card-img">
@@ -10,7 +10,7 @@ export const cardSmall = (title, price, imgUrl) => {
 			<div class="slm-card-info">
 				<h3>{title}</h3>
 				<p>{price}</p>
-				<div class="star-rating"></div>
+				{starRating(rating)}
 			</div>
 		</div>
 	)
