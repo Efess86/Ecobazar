@@ -17,7 +17,7 @@
 		content: '★★★★★';
 		letter-spacing: 3px;
 		background: linear-gradient(90deg, $starRatingColor var(--percent), var(--star-color) var(--percent));
-		// background-clip: text;
+		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
