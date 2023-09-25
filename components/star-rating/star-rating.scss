@@ -1,11 +1,11 @@
 @import '../../css/variables/variables.scss';
 
 :root {
-	--star-size: 16px;
-	--star-color: #fff;
+	--star-size: 18px;
+	--star-color: rgb(177, 177, 177);
 }
 
-.Stars {
+.stars {
 	--percent: calc(var(--rating) / 5 * 100%);
 
 	display: inline-block;
@@ -17,6 +17,7 @@
 		content: '★★★★★';
 		letter-spacing: 3px;
 		background: linear-gradient(90deg, $starRatingColor var(--percent), var(--star-color) var(--percent));
+		// background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
