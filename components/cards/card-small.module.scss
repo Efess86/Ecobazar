@@ -1,0 +1,84 @@
+@import '../../css/variables/variables.scss';
+
+.card {
+	display: flex;
+	align-items: center;
+	margin: 10px;
+
+	position: relative;
+	max-width: 424px;
+	min-height: 116px;
+	border: 1px solid $grayColor;
+	border-radius: 6px;
+	font-family: $font-family;
+	transition: .3s ease-in-out;
+
+
+	&:hover {
+		border: 1px solid $hardPrimaryColor;
+		box-shadow: 1px 1px 8px 0px $hardPrimaryColor;
+
+		.cardInfo {
+			opacity: 0;
+		}
+
+		.cardInfoHover {
+			opacity: 1;
+		}
+
+		.cardTitle {
+			h3 {
+				color: $hardPrimaryColor;
+			}
+		}
+	}
+}
+
+.cardTitle {
+	margin: 0 0 55px 0;
+}
+
+.cardInfo {
+	position: absolute;
+	top: 45px;
+	left: 103px;
+	opacity: 1;
+	transition: opacity .3s ease-in-out;
+
+	p {
+		font-weight: 600;
+	}
+}
+
+.cardInfoHover {
+	position: absolute;
+	top: 50px;
+	left: 103px;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+
+	display: flex;
+	gap: 12px;
+}
+
+.cardInfoBtn {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid $grayColor;
+	transition: .3s ease-in-out;
+
+
+	&:hover {
+		border: none;
+		background-color: $primaryColor;
+
+		img {
+			filter: brightness(0) invert(1);
+		}
+	}
+}

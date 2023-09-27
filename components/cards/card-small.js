@@ -1,33 +1,33 @@
-import './card-small.scss';
+import cardStyles from './card-small.module.scss';
 import { starRating } from '../star-rating/star-rating';
 
 export const cardSmall = ({ title, price, imgUrl, rating }) => {
   return `
-    <div class="card-small">
+    <div class="${cardStyles.card}">
 
-      <div class="slm-card-img">
+      <div>
         <img src="${imgUrl}" alt="${title}">
       </div>
 
-      <div class="slm-card-title">
+      <div class="${cardStyles.cardTitle}">
         <h3>${title}</h3>
       </div>
 
-      <div class="slm-card-info">
+      <div class="${cardStyles.cardInfo}">
         <p>${price}</p>
         ${starRating(rating)}
       </div>
 
-      <div class="slm-card-info-hover">
-        <a href="#" class="slm-card-info-btn">
+      <div class="${cardStyles.cardInfoHover}">
+        <a href="#" class="${cardStyles.cardInfoBtn}">
           <img src="/assets/icons/bag.svg" alt="bag button">
         </a>
   
-        <a href="#" class="slm-card-info-btn">
+        <a href="#" class="${cardStyles.cardInfoBtn}">
           <img src="/assets/icons/eye.svg" alt="eye button">
         </a>
   
-        <a href="#" class="slm-card-info-btn">
+        <a href="#" class="${cardStyles.cardInfoBtn}">
           <img src="/assets/icons/heart.svg" alt="heart button">
         </a>
       </div>
