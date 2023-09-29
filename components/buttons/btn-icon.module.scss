@@ -1,0 +1,59 @@
+@import '../../css/variables/variables.scss';
+
+
+.btnIconSmall {
+	background-color: $primaryColor;
+	color: $whiteColor;
+	padding: 10px 24px;
+	font: 600 12px $font-family;
+	border-radius: 43px;
+	transition: .3s ease-in-out;
+
+	& img {
+		width: 16px;
+		margin: 0 0 0 10px;
+		height: 17px;
+	}
+
+	&:hover {
+		background-color: $hardPrimaryColor;
+	}
+}
+
+.btnIconMedium {
+	background-color: $primaryColor;
+	color: $whiteColor;
+	padding: 14px 32px;
+	font: 600 14px $font-family;
+	border-radius: 43px;
+	transition: .3s ease-in-out;
+
+	& img {
+		width: 23px;
+		margin: 0 0 0 10px;
+		height: 21px;
+	}
+
+	&:hover {
+		background-color: $hardPrimaryColor;
+	}
+}
+
+.btnIconLarge {
+	background-color: $primaryColor;
+	color: $whiteColor;
+	padding: 16px 40px;
+	font: 600 16px $font-family;
+	border-radius: 43px;
+	transition: .3s ease-in-out;
+
+	& img {
+		width: 27px;
+		margin: 0 0 0 10px;
+		height: 25px;
+	}
+
+	&:hover {
+		background-color: $hardPrimaryColor;
+	}
+}
