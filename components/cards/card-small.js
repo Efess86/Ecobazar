@@ -5,7 +5,7 @@ export const cardSmall = ({ title, price, imgUrl, rating }) => {
   return `
     <div class="${cardStyles.card}">
 
-      <div>
+      <div class="${cardStyles.cardImage}">
         <img src="${imgUrl}" alt="${title}">
       </div>
 

@@ -1,1 +1,0 @@
-import './btn-medium.scss';

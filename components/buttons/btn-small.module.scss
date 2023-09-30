@@ -1,0 +1,44 @@
+@import '../../css/variables/variables.scss';
+
+.btnSmallFill {
+	background-color: $primaryColor;
+	padding: 10px 24px;
+	font: 600 12px $font-family;
+	color: $whiteColor;
+	border-radius: 43px;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		background-color: $hardPrimaryColor;
+	}
+}
+
+.btnSmallBorder {
+	background-color: transparent;
+	padding: 10px 24px;
+	font: 600 12px $font-family;
+	color: $primaryColor;
+	border: 2px solid $primaryColor;
+	border-radius: 43px;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		color: $hardPrimaryColor;
+		border: 2px solid $hardPrimaryColor;
+	}
+}
+
+.btnSmallGhost {
+	background-color: #00b2072e;
+	padding: 10px 24px;
+	font: 600 12px $font-family;
+	color: $primaryColor;
+	border-radius: 43px;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		color: $hardPrimaryColor;
+		background-color: #00b2076b;
+
+	}
+}
