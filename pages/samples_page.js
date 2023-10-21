@@ -1,4 +1,5 @@
 import { cardSmall } from "../components/cards/card-small";
+import { cardMedium } from "../components/cards/card-medium";
 import { btnSmallFill, btnSmallBorder, btnSmallGhost } from "../components/buttons/btn-small";
 import { btnMediumFill, btnMediumBorder, btnMediumGhost } from "../components/buttons/btn-medium";
 import { btnLargeFill, btnLargeBorder, btnLargeGhost } from "../components/buttons/btn-large";
@@ -11,7 +12,7 @@ const SAMPLE_ARRAY = [
 	{ title: 'Green Apples', price: '$8.99', imgUrl: '/assets/images/green_apples.png', rating: 2.3, },
 ];
 
-export const cardsSample = () => {
+export const cardSmallApp = () => {
 	let html = '';
 	SAMPLE_ARRAY.forEach((item) => {
 		html += cardSmall(item);
@@ -19,7 +20,15 @@ export const cardsSample = () => {
 	return html;
 };
 
-export const btnSample = () => {
+export const cardMediumApp = () => {
+	let html = '';
+	SAMPLE_ARRAY.forEach((item) => {
+		html += cardMedium(item);
+	});
+	return html;
+};
+
+export const btnApp = () => {
 	const htmlArray = [];
 
 	//  ======== Small btns ===========
@@ -49,7 +58,7 @@ export const btnSample = () => {
 	//  ======== Icon btns ===========
 	htmlArray.push(btnIconSmall('Small Icon', './assets/icons/eye.svg'));
 	htmlArray.push(btnIconMedium('Medium Icon', './assets/icons/heart.svg'));
-	htmlArray.push(btnIconLarge('Large Icon', './assets/icons/bag.svg'));
+	htmlArray.push(btnIconLarge('Large Icon', './assets/icons/heart-white.svg'));
 
 	const html = htmlArray.join('');
 	return html;
