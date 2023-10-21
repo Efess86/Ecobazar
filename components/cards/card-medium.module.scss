@@ -1,32 +1,61 @@
 @import '../../css/variables/variables.scss';
 
 .card {
+	margin: 30px;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 12px 16px;
 	border: 1px solid $greyColor;
-	max-width: 312px;
-	min-height: 407px;
+	max-width: 264px;
+	min-height: 327px;
 	font-family: $font-family;
+	border-radius: 6px;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		border: 1px solid $hardPrimaryColor;
+		box-shadow: 1px 1px 8px 0px $hardPrimaryColor;
+
+		.cardBtns {
+			opacity: 1;
+		}
+
+		.content {
+			h2 {
+				border: none;
+				color: $primaryColor;
+			}
+		}
+	}
 }
 
 .cardImage {
+	margin: 0px;
 
 	img {
-		width: 275px;
-		height: 275px;
+		width: 245px;
+		height: 245px;
 		object-fit: cover;
 	}
 }
 
 .contentContainer {
 	position: relative;
-	margin: 0px;
 }
 
 .content {
-	margin: 0px;
+	h2 {
+		transition: .3s ease-in-out;
+		line-height: 150%;
+		font: 400 14px $font-family;
+	}
+
+	p {
+		line-height: 150%;
+		font: 500 16px $font-family;
+	}
 }
 
 .cardBtnsContainer {
@@ -36,11 +65,14 @@
 	position: absolute;
 	right: 0px;
 	bottom: 12px;
-	height: 360px;
+	height: 285px;
 
 }
 
 .cardBtns {
+	opacity: 0;
+	transition: .3s ease-in-out;
+
 	a {
 		display: flex;
 		justify-content: center;
@@ -50,11 +82,23 @@
 		border-radius: 50%;
 		border: 1px solid $greyColor;
 		margin: 0 0 10px 0;
+		transition: .3s ease-in-out;
+
+		&:hover {
+			border: none;
+			background-color: $primaryColor;
+
+			img {
+				filter: brightness(0) invert(1);
+			}
+		}
 	}
+
 }
 
 
 .cardBtnsLast {
+
 	a {
 		display: flex;
 		justify-content: center;
@@ -63,5 +107,16 @@
 		height: 40px;
 		border-radius: 50%;
 		background-color: $greyColor;
+		transition: .3s ease-in-out;
+
+		&:hover {
+			border: none;
+			background-color: $primaryColor;
+
+			img {
+				filter: brightness(0) invert(1);
+			}
+		}
 	}
+
 }
