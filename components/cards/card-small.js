@@ -1,7 +1,7 @@
 import cardStyles from './card-small.module.scss';
 import { starRating } from '../star-rating/star-rating';
 
-export const cardSmall = ({ title, price, imgUrl, rating }) => {
+export const cardSmall = ({ title, price, buy, itemLink, like, imgUrl, rating }) => {
   return `
     <div class="${cardStyles.card}">
 
@@ -19,15 +19,15 @@ export const cardSmall = ({ title, price, imgUrl, rating }) => {
       </div>
 
       <div class="${cardStyles.cardInfoHover}">
-        <a href="#" class="${cardStyles.cardInfoBtn}">
+        <a href="${buy}" class="${cardStyles.cardInfoBtn}">
           <img src="/assets/icons/bag.svg" alt="bag button">
         </a>
   
-        <a href="#" class="${cardStyles.cardInfoBtn}">
+        <a href="${itemLink}" class="${cardStyles.cardInfoBtn}">
           <img src="/assets/icons/eye.svg" alt="eye button">
         </a>
   
-        <a href="#" class="${cardStyles.cardInfoBtn}">
+        <a href="${like}" class="${cardStyles.cardInfoBtn}">
           <img src="/assets/icons/heart.svg" alt="heart button">
         </a>
       </div>
