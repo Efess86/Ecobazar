@@ -56,9 +56,9 @@ const CARD_MEDIUM_ARRAY = [
 	{
 		title: 'Chanise Cabbage',
 		sale: 'Sale 50%',
-		newItem: '',
+		newItem: 'New',
 		bestSeller: 'Best',
-		outOfStock: 'Out',
+		outOfStock: 'Out of Stock',
 		price: '$14.99',
 		buyLink: 'https://www.google.com/',
 		itemLink: 'https://www.google.com/',

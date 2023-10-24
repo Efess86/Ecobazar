@@ -2,15 +2,15 @@ import cardStyles from "./card-medium.module.scss";
 import { starRating } from "../star-rating/star-rating";
 
 export const cardMedium = ({ title, sale, newItem, bestSeller, outOfStock, price, buy, itemLink, like, imgUrl, rating }) => {
-	// if comming empty string add noPadding class
-	const saleClass = sale === "" ? cardStyles.noPadding : cardStyles.label;
-	const newItemClass = newItem === "" ? cardStyles.noPadding : cardStyles.label;
-	const bestSellerClass = bestSeller === "" ? cardStyles.noPadding : cardStyles.label;
-	const outOfStockClass = outOfStock === "" ? cardStyles.noPadding : cardStyles.label;
+	// if comming empty string add displayNone class
+	const saleClass = sale === "" ? cardStyles.displayNone : cardStyles.label;
+	const newItemClass = newItem === "" ? cardStyles.displayNone : cardStyles.label;
+	const bestSellerClass = bestSeller === "" ? cardStyles.displayNone : cardStyles.label;
+	const outOfStockClass = outOfStock === "" ? cardStyles.displayNone : cardStyles.label;
 
 	return `
 	<div class="${cardStyles.card}">
-		<div className="${cardStyles.labelContainer}">
+		<div class="${cardStyles.labelWrapper}">
 			<p class="${saleClass} ${cardStyles.sale}">
 				${sale}
 			</p>
