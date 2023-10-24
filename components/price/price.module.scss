@@ -1,0 +1,18 @@
+@import '../../css/variables/variables.scss';
+
+
+.priceContainer {
+	display: flex;
+	gap: 2px;
+	width: max-content;
+
+	p {
+		color: #000000;
+		font: 400 16px $font-family;
+
+		&:last-child {
+			color: #999999;
+			text-decoration: line-through;
+		}
+	}
+}

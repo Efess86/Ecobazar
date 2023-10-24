@@ -1,11 +1,12 @@
 import cardStyles from "./card-medium.module.scss";
 import { starRating } from "../star-rating/star-rating";
+import { setPrice } from "../price/price";
 
-export const cardMedium = ({ title, sale, newItem, bestSeller, outOfStock, price, buy, itemLink, like, imgUrl, rating }) => {
+export const cardMedium = ({ title, sale, bestSeller, newItem, outOfStock, price, discount, buy, itemLink, like, imgUrl, rating }) => {
 	// if comming empty string add displayNone class
 	const saleClass = sale === "" ? cardStyles.displayNone : cardStyles.label;
-	const newItemClass = newItem === "" ? cardStyles.displayNone : cardStyles.label;
 	const bestSellerClass = bestSeller === "" ? cardStyles.displayNone : cardStyles.label;
+	const newItemClass = newItem === "" ? cardStyles.displayNone : cardStyles.label;
 	const outOfStockClass = outOfStock === "" ? cardStyles.displayNone : cardStyles.label;
 
 	return `
@@ -14,11 +15,11 @@ export const cardMedium = ({ title, sale, newItem, bestSeller, outOfStock, price
 			<p class="${saleClass} ${cardStyles.sale}">
 				${sale}
 			</p>
-			<p class="${newItemClass} ${cardStyles.newItem}">
-				${newItem}
-			</p>
 			<p class="${bestSellerClass} ${cardStyles.bestSeller}">
 				${bestSeller}
+			</p>
+			<p class="${newItemClass} ${cardStyles.newItem}">
+				${newItem}
 			</p>
 			<p class="${outOfStockClass} ${cardStyles.outOfStock}">
 				${outOfStock}
@@ -30,7 +31,7 @@ export const cardMedium = ({ title, sale, newItem, bestSeller, outOfStock, price
 		<div class="${cardStyles.contentContainer}">
 			<div class="${cardStyles.content}">
 				<h2>${title}</h2>
-				<p>${price}</p>
+				${setPrice(price, discount)}
 				${starRating(rating)}
 			</div>
 			<div class="${cardStyles.cardBtnsContainer}">

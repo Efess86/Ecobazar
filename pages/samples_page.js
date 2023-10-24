@@ -12,10 +12,11 @@ const SAMPLE_ARRAY = [
 	{
 		title: 'Chanise Cabbage',
 		sale: 'Sale 50%',
-		newItem: '',
 		bestSeller: 'Best',
+		newItem: '',
 		outOfStock: 'Out',
 		price: '$14.99',
+		discount: '$12,99',
 		buyLink: 'https://www.google.com/',
 		itemLink: 'https://www.google.com/',
 		likeLink: 'https://www.google.com/',
@@ -26,10 +27,11 @@ const SAMPLE_ARRAY = [
 	{
 		title: 'Chanise Cabbage',
 		sale: 'Sale 50%',
-		newItem: '',
 		bestSeller: 'Best',
+		newItem: '',
 		outOfStock: 'Out',
 		price: '$6.59',
+		discount: '$12,99',
 		buyLink: 'https://www.google.com/',
 		itemLink: 'https://www.google.com/',
 		likeLink: 'https://www.google.com/',
@@ -40,10 +42,11 @@ const SAMPLE_ARRAY = [
 	{
 		title: 'Green Apples',
 		sale: 'Sale 50%',
-		newItem: '',
 		bestSeller: 'Best',
+		newItem: '',
 		outOfStock: 'Out',
 		price: '$8.99',
+		discount: '$12,99',
 		buy: 'https://www.google.com/',
 		itemLink: 'https://www.google.com/',
 		like: 'https://www.google.com/',
@@ -56,10 +59,11 @@ const CARD_MEDIUM_ARRAY = [
 	{
 		title: 'Chanise Cabbage',
 		sale: 'Sale 50%',
+		bestSeller: 'Best Seller',
 		newItem: 'New',
-		bestSeller: 'Best',
 		outOfStock: 'Out of Stock',
 		price: '$14.99',
+		discount: '$12,99',
 		buyLink: 'https://www.google.com/',
 		itemLink: 'https://www.google.com/',
 		likeLink: 'https://www.google.com/',
@@ -70,10 +74,11 @@ const CARD_MEDIUM_ARRAY = [
 	{
 		title: 'Chanise Cabbage',
 		sale: 'Sale 50%',
-		newItem: '',
 		bestSeller: 'Best',
+		newItem: '',
 		outOfStock: 'Out',
 		price: '$6.59',
+		discount: '$12,99',
 		buyLink: 'https://www.google.com/',
 		itemLink: 'https://www.google.com/',
 		likeLink: 'https://www.google.com/',
@@ -84,10 +89,11 @@ const CARD_MEDIUM_ARRAY = [
 	{
 		title: 'Green Apples',
 		sale: 'Sale 50%',
-		newItem: '',
 		bestSeller: 'Best',
+		newItem: '',
 		outOfStock: 'Out',
 		price: '$8.99',
+		discount: '$12,99',
 		buy: 'https://www.google.com/',
 		itemLink: 'https://www.google.com/',
 		like: 'https://www.google.com/',
@@ -104,7 +110,6 @@ export const cardSmallComp = () => {
 	});
 	return html;
 };
-
 //  ===== Cards medium =====
 
 export const cardMediumComp = () => {
