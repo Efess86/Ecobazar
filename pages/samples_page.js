@@ -8,45 +8,36 @@ import { btnLargeFill, btnLargeBorder, btnLargeGhost } from "../components/butto
 import { btnIconSmall, btnIconMedium, btnIconLarge } from "../components/buttons/btn-icon";
 
 
-const SAMPLE_ARRAY = [
+const CARD_SMALL_ARRAY = [
 	{
 		title: 'Chanise Cabbage',
-		sale: 'Sale 50%',
-		bestSeller: 'Best',
-		newItem: '',
-		outOfStock: 'Out',
 		price: '$14.99',
-		discount: '$12,99',
-		buyLink: 'https://www.google.com/',
+		oldPrice: '$12,99',
+		priceSize: 14,
+		buy: 'https://www.google.com/',
 		itemLink: 'https://www.google.com/',
-		likeLink: 'https://www.google.com/',
+		like: 'https://www.google.com/',
 		imgUrl: '/assets/images/green_apples.png',
 		rating: 1.7,
 	},
 
 	{
 		title: 'Chanise Cabbage',
-		sale: 'Sale 50%',
-		bestSeller: 'Best',
-		newItem: '',
-		outOfStock: 'Out',
 		price: '$6.59',
-		discount: '$12,99',
-		buyLink: 'https://www.google.com/',
+		oldPrice: '$12,99',
+		priceSize: 14,
+		buy: 'https://www.google.com/',
 		itemLink: 'https://www.google.com/',
-		likeLink: 'https://www.google.com/',
+		like: 'https://www.google.com/',
 		imgUrl: '/assets/images/green_apples.png',
 		rating: 4.1,
 	},
 
 	{
 		title: 'Green Apples',
-		sale: 'Sale 50%',
-		bestSeller: 'Best',
-		newItem: '',
-		outOfStock: 'Out',
 		price: '$8.99',
-		discount: '$12,99',
+		oldPrice: '$12,99',
+		priceSize: 14,
 		buy: 'https://www.google.com/',
 		itemLink: 'https://www.google.com/',
 		like: 'https://www.google.com/',
@@ -58,42 +49,45 @@ const SAMPLE_ARRAY = [
 const CARD_MEDIUM_ARRAY = [
 	{
 		title: 'Chanise Cabbage',
-		sale: 'Sale 50%',
-		bestSeller: 'Best Seller',
-		newItem: 'New',
-		outOfStock: 'Out of Stock',
+		sale: 'Discount 2$',
+		bestSeller: '',
+		newItem: 'New!',
+		outOfStock: '',
 		price: '$14.99',
-		discount: '$12,99',
-		buyLink: 'https://www.google.com/',
+		oldPrice: '$16.99',
+		priceSize: "16px",
+		buy: 'https://www.google.com/',
 		itemLink: 'https://www.google.com/',
-		likeLink: 'https://www.google.com/',
+		like: 'https://www.google.com/',
 		imgUrl: '/assets/images/green_apples.png',
-		rating: 1.7,
+		rating: 4.5,
 	},
 
 	{
 		title: 'Chanise Cabbage',
-		sale: 'Sale 50%',
-		bestSeller: 'Best',
+		sale: '',
+		bestSeller: '',
 		newItem: '',
-		outOfStock: 'Out',
-		price: '$6.59',
-		discount: '$12,99',
-		buyLink: 'https://www.google.com/',
+		outOfStock: 'Out of Stock',
+		price: '0$',
+		oldPrice: '$5.30',
+		priceSize: "16px",
+		buy: 'https://www.google.com/',
 		itemLink: 'https://www.google.com/',
-		likeLink: 'https://www.google.com/',
+		like: 'https://www.google.com/',
 		imgUrl: '/assets/images/green_apples.png',
 		rating: 4.1,
 	},
 
 	{
 		title: 'Green Apples',
-		sale: 'Sale 50%',
-		bestSeller: 'Best',
-		newItem: '',
-		outOfStock: 'Out',
+		sale: '',
+		bestSeller: 'Best Seller',
+		newItem: 'New!',
+		outOfStock: '',
 		price: '$8.99',
-		discount: '$12,99',
+		oldPrice: '',
+		priceSize: "16px",
 		buy: 'https://www.google.com/',
 		itemLink: 'https://www.google.com/',
 		like: 'https://www.google.com/',
@@ -105,7 +99,7 @@ const CARD_MEDIUM_ARRAY = [
 //  ===== Cards small =====
 export const cardSmallComp = () => {
 	let html = '';
-	SAMPLE_ARRAY.forEach((item) => {
+	CARD_SMALL_ARRAY.forEach((item) => {
 		html += cardSmall(item);
 	});
 	return html;
