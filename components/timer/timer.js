@@ -1,4 +1,4 @@
-import { timerStyle } from './timer.module.scss';
+import timerStyle from './timer.module.scss';
 
 export const setTimer = (timerDays, timerHours, timerMinutes, timerSeconds, timerNumsSize, timerTextSize) => {
 
@@ -50,20 +50,20 @@ export const setTimer = (timerDays, timerHours, timerMinutes, timerSeconds, time
 
 
 	return `
-	<div class="timer">
-		<div class="days">
+	<div class="${timerStyle.container}">
+		<div class="${timerStyle.days} ${timerStyle.item}">
 			<p style="font-size:${timerNumsSize}px;">${timerDays}</p>
 			<span style="font-size:${timerTextSize}px;">days</span>
 		</div>
-		<div class="hours">
+		<div class="${timerStyle.hours} ${timerStyle.item}">
 			<p style="font-size:${timerNumsSize}px;">${timerHours}</p>
 			<span style="font-size:${timerTextSize}px;">hours</span>
 		</div>
-		<div class="minutes">
+		<div class="${timerStyle.minutes} ${timerStyle.item}">
 			<p style="font-size:${timerNumsSize}px;">${timerMinutes}</p>
 			<span style="font-size:${timerTextSize}px;">mins</span>
 		</div>
-		<div class="seconds">
+		<div class="${timerStyle.seconds} ${timerStyle.item}">
 			<p style="font-size:${timerNumsSize}px;">${timerSeconds}</p>
 			<span style="font-size:${timerTextSize}px;">secs</span>
 		</div>
