@@ -1,5 +1,8 @@
+import sampleStyles from './sample.module.scss';
+
 import { cardSmall } from "../components/cards/card-small";
 import { cardMedium } from "../components/cards/card-medium";
+import { setTimer } from "../components/timer/timer";
 
 
 import { btnSmallFill, btnSmallBorder, btnSmallGhost } from "../components/buttons/btn-small";
@@ -149,4 +152,62 @@ export const btnSample = () => {
 
 	const html = htmlArray.join('');
 	return html;
+};
+
+
+// export const timerTest = (timerDays, timerHours, timerMinutes, timerSeconds) => {
+
+// 	return `
+// 	<div class="${sampleStyles.timerStyles}">
+// 		${setInterval(() => setTimer(timerDays, timerHours, timerMinutes, timerSeconds), 1000)}
+// 	</div>
+// 	`;
+// }
+
+// export const timerTest = (timerDays, timerHours, timerMinutes, timerSeconds) => {
+// 	setInterval(() => {
+// 		const timerElement = document.getElementById('timer');
+// 		if (timerElement) {
+// 			timerElement.innerHTML = setTimer(timerDays, timerHours, timerMinutes, timerSeconds);
+// 		}
+// 	}, 1000);
+
+// 	return `<div class="${sampleStyles.timerStyles}" id="timer"></div>`;
+// };
+
+
+export const timerTest = (timerDays, timerHours, timerMinutes, timerSeconds) => {
+	setInterval(() => {
+		if (timerSeconds > 0) {
+			timerSeconds--;
+		} else {
+			if (timerMinutes > 0) {
+				timerMinutes--;
+				timerSeconds = 59;
+			} else {
+				if (timerHours > 0) {
+					timerHours--;
+					timerMinutes = 59;
+					timerSeconds = 59;
+				} else {
+					if (timerDays > 0) {
+						timerDays--;
+						timerHours = 23;
+						timerMinutes = 59;
+						timerSeconds = 59;
+					} else {
+						// Таймер закончился
+						clearInterval(console.log('time is over'));
+					}
+				}
+			}
+		}
+
+		const timerElement = document.getElementById('timer');
+		if (timerElement) {
+			timerElement.innerHTML = setTimer(timerDays, timerHours, timerMinutes, timerSeconds);
+		}
+	}, 1000);
+
+	return `<div class="${sampleStyles.timerStyles}" id="timer">${setTimer(timerDays, timerHours, timerMinutes, timerSeconds)}</div>`;
 };

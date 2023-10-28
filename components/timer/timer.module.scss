@@ -1,32 +1,17 @@
 @import '../../css/variables/variables.scss';
 
-.container {
-	display: flex;
-}
-
-.item {
-	max-width: 60px;
-	width: 100%;
-	min-height: 37px;
-	text-align: center;
-	border: 1px solid red;
-
-	p {
-		font: 500 18px $font-family;
-	}
-
-	span {
-		font: 500 10px $font-family;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		color: $secondGreyColor;
-	}
-}
-
 .days {
 	margin: 0px;
 }
 
-// .hours{}
-// .minutes{}
-// .seconds{}
+.hours {
+	margin: 0px;
+}
+
+.minutes {
+	margin: 0px;
+}
+
+.seconds {
+	margin: 0px;
+}
