@@ -1,0 +1,201 @@
+@import '../css/variables/variables.scss';
+
+
+
+#timer {
+	margin: 0;
+}
+
+// ============ Timer styles =================
+.timerStyles {
+	display: flex;
+
+	div {
+		max-width: 60px;
+		width: 100%;
+		min-height: 37px;
+		text-align: center;
+		// border: 1px solid red;
+
+		p {
+			font: 500 18px $font-family;
+		}
+
+		span {
+			font: 500 10px $font-family;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			color: $secondGreyColor;
+		}
+	}
+}
+
+// ==============================================
+.card {
+	margin: 30px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 12px 16px;
+	border: 1px solid $greyColor;
+	max-width: 264px;
+	min-height: 327px;
+	font-family: $font-family;
+	border-radius: 6px;
+	transition: .3s ease-in-out;
+
+	position: relative;
+
+	&:hover {
+		border: 1px solid $hardPrimaryColor;
+		box-shadow: 1px 1px 8px 0px $hardPrimaryColor;
+
+		.cardBtns {
+			opacity: 1;
+		}
+
+		.content {
+			h2 {
+				border: none;
+				color: $primaryColor;
+			}
+		}
+	}
+}
+
+// ============ Labels =============
+.labelWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	width: 185px;
+
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+.label {
+	padding: 3px 8px;
+	width: max-content;
+	border-radius: 8px;
+	color: $whiteColor;
+	font: 400 14px $font-family;
+	cursor: default;
+}
+
+.sale {
+	background-color: $saleColor;
+
+}
+
+.newItem {
+	background-color: $newItemColor;
+}
+
+.bestSeller {
+	background-color: $bestSaleColor;
+}
+
+
+.outOfStock {
+	background-color: $outOfStockColor;
+}
+
+.displayNone {
+	display: none;
+}
+
+// ============ Labels =============
+
+
+.cardImage {
+	margin: 0px;
+
+	img {
+		width: 245px;
+		height: 245px;
+		object-fit: cover;
+	}
+}
+
+.contentContainer {
+	position: relative;
+}
+
+.content {
+	h2 {
+		transition: .3s ease-in-out;
+		line-height: 150%;
+		font: 400 14px $font-family;
+	}
+
+	p {
+		line-height: 150%;
+		font: 500 16px $font-family;
+	}
+}
+
+.cardBtnsContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
+	right: 0px;
+	bottom: 12px;
+	height: 285px;
+
+}
+
+.cardBtns {
+	opacity: 0;
+	transition: .3s ease-in-out;
+
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		border: 1px solid $greyColor;
+		margin: 0 0 10px 0;
+		transition: .3s ease-in-out;
+
+		&:hover {
+			border: none;
+			background-color: $primaryColor;
+
+			img {
+				filter: brightness(0) invert(1);
+			}
+		}
+	}
+
+}
+
+
+.cardBtnsLast {
+
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: $greyColor;
+		transition: .3s ease-in-out;
+
+		&:hover {
+			border: none;
+			background-color: $primaryColor;
+
+			img {
+				filter: brightness(0) invert(1);
+			}
+		}
+	}
+
+}

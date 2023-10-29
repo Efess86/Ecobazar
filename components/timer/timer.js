@@ -1,5 +1,3 @@
-import timerStyle from './timer.module.scss';
-
 export const setTimer = (timerDays, timerHours, timerMinutes, timerSeconds) => {
 
 	const formatTimerValue = (value) => {
@@ -7,21 +5,21 @@ export const setTimer = (timerDays, timerHours, timerMinutes, timerSeconds) => {
 	};
 
 	return `
-		<div class="${timerStyle.days}">
+		<div>
 			<p>${formatTimerValue(timerDays)}</p>
 			<span>days</span>
 		</div>
-		<div class="${timerStyle.hours}">
+		<div>
 			<p>${formatTimerValue(timerHours)}</p>
 			<span>hours</span>
 		</div>
-		<div class="${timerStyle.minutes}">
+		<div>
 			<p>${formatTimerValue(timerMinutes)}</p>
 			<span>mins</span>
 		</div>
-		<div class="${timerStyle.seconds}">
+		<div>
 			<p>${formatTimerValue(timerSeconds)}</p>
 			<span>secs</span>
 		</div>
-		`;
+	`;
 };

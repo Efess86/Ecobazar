@@ -12,8 +12,8 @@ export const cardMedium = ({ title, sale, bestSeller, newItem, outOfStock, price
 	return `
 	<div class="${cardStyles.card}">
 		<div class="${cardStyles.labelWrapper}">
-			<p class="${saleClass} ${cardStyles.sale}">
-				${sale}
+			<p class="${saleClass} ${cardStyles.sale}"> 
+				${sale}    
 			</p>
 			<p class="${bestSellerClass} ${cardStyles.bestSeller}">
 				${bestSeller}

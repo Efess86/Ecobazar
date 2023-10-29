@@ -2,7 +2,8 @@ import sampleStyles from './sample.module.scss';
 
 import { cardSmall } from "../components/cards/card-small";
 import { cardMedium } from "../components/cards/card-medium";
-import { setTimer } from "../components/timer/timer";
+import { cardLarge } from '../components/cards/card-large';
+// import { setTimer } from "../components/timer/timer";
 
 
 import { btnSmallFill, btnSmallBorder, btnSmallGhost } from "../components/buttons/btn-small";
@@ -99,6 +100,110 @@ const CARD_MEDIUM_ARRAY = [
 	},
 ];
 
+const CARD_LARGE_ARRAY = [
+	{
+		id: 'timer1',
+		title: 'Chanise Cabbage',
+		sale: 'Discount 2$',
+		bestSeller: '',
+		newItem: 'New!',
+		outOfStock: '',
+		price: '$14.99',
+		oldPrice: '$16.99',
+		priceSize: "16px",
+		buy: '',
+		itemLink: '',
+		like: '',
+		imgUrl: '/assets/images/green_apples.png',
+		rating: 4.5,
+		timerDays: '1',
+		timerHours: '4',
+		timerMinutes: '23',
+		timerSeconds: '5'
+	},
+	{
+		id: 'timer2',
+		title: 'Chanise Cabbage',
+		sale: 'Discount 2$',
+		bestSeller: '',
+		newItem: 'New!',
+		outOfStock: '',
+		price: '$14.99',
+		oldPrice: '$16.99',
+		priceSize: "16px",
+		buy: 'https://www.google.com/',
+		itemLink: 'https://www.google.com/',
+		like: 'https://www.google.com/',
+		imgUrl: '/assets/images/green_apples.png',
+		rating: 4.5,
+		timerDays: '1',
+		timerHours: '2',
+		timerMinutes: '15',
+		timerSeconds: '12'
+	},
+	{
+		id: 'timer3',
+		title: 'Chanise Cabbage',
+		sale: 'Discount 2$',
+		bestSeller: '',
+		newItem: 'New!',
+		outOfStock: '',
+		price: '$14.99',
+		oldPrice: '$16.99',
+		priceSize: "16px",
+		buy: 'https://www.google.com/',
+		itemLink: 'https://www.google.com/',
+		like: 'https://www.google.com/',
+		imgUrl: '/assets/images/green_apples.png',
+		rating: 4.5,
+		timerDays: '1',
+		timerHours: '4',
+		timerMinutes: '2',
+		timerSeconds: '5'
+	},
+	{
+		id: 'timer4',
+		title: 'Golden apples',
+		sale: 'Discount 2$',
+		bestSeller: '',
+		newItem: 'New!',
+		outOfStock: '',
+		price: '$14.99',
+		oldPrice: '$16.99',
+		priceSize: "16px",
+		buy: 'https://www.google.com/',
+		itemLink: 'https://www.google.com/',
+		like: 'https://www.google.com/',
+		imgUrl: '/assets/images/green_apples.png',
+		rating: 4.5,
+		timerDays: '1',
+		timerHours: '0',
+		timerMinutes: '37',
+		timerSeconds: '55'
+	},
+	{
+		id: 'timer5',
+		title: 'Chanise Cabbage',
+		sale: 'Discount 2$',
+		bestSeller: '',
+		newItem: 'New!',
+		outOfStock: '',
+		price: '$14.99',
+		oldPrice: '$16.99',
+		priceSize: "16px",
+		buy: 'https://www.google.com/',
+		itemLink: 'https://www.google.com/',
+		like: 'https://www.google.com/',
+		imgUrl: '/assets/images/green_apples.png',
+		rating: 4.5,
+		timerDays: '0',
+		timerHours: '0',
+		timerMinutes: '44',
+		timerSeconds: '34'
+	},
+
+];
+
 //  ===== Cards small =====
 export const cardSmallComp = () => {
 	let html = '';
@@ -116,6 +221,16 @@ export const cardMediumComp = () => {
 	});
 	return html;
 };
+
+
+export const cardLargeComp = () => {
+	let html = '';
+	CARD_LARGE_ARRAY.forEach((item) => {
+		html += cardLarge(item);
+	});
+	return html;
+};
+
 
 
 export const btnSample = () => {
@@ -155,59 +270,42 @@ export const btnSample = () => {
 };
 
 
-// export const timerTest = (timerDays, timerHours, timerMinutes, timerSeconds) => {
+// export const setTimerSale = (timerDays, timerHours, timerMinutes, timerSeconds) => {
+// 	let intervalId;
 
-// 	return `
-// 	<div class="${sampleStyles.timerStyles}">
-// 		${setInterval(() => setTimer(timerDays, timerHours, timerMinutes, timerSeconds), 1000)}
-// 	</div>
-// 	`;
-// }
+// 	intervalId = setInterval(() => {
+// 		if (timerSeconds > 0) {
+// 			timerSeconds--;
+// 		} else {
+// 			if (timerMinutes > 0) {
+// 				timerMinutes--;
+// 				timerSeconds = 59;
+// 			} else {
+// 				if (timerHours > 0) {
+// 					timerHours--;
+// 					timerMinutes = 59;
+// 					timerSeconds = 59;
+// 				} else {
+// 					if (timerDays > 0) {
+// 						timerDays--;
+// 						timerHours = 23;
+// 						timerMinutes = 59;
+// 						timerSeconds = 59;
+// 					} else {
+// 						// Таймер закончился
+// 						clearInterval(intervalId);
+// 						console.log('time is over');
+// 						return;
+// 					}
+// 				}
+// 			}
+// 		}
 
-// export const timerTest = (timerDays, timerHours, timerMinutes, timerSeconds) => {
-// 	setInterval(() => {
 // 		const timerElement = document.getElementById('timer');
 // 		if (timerElement) {
 // 			timerElement.innerHTML = setTimer(timerDays, timerHours, timerMinutes, timerSeconds);
 // 		}
 // 	}, 1000);
 
-// 	return `<div class="${sampleStyles.timerStyles}" id="timer"></div>`;
+// 	return `<div class="${sampleStyles.timerStyles}" id="timer">${setTimer(timerDays, timerHours, timerMinutes, timerSeconds)}</div>`;
 // };
-
-
-export const timerTest = (timerDays, timerHours, timerMinutes, timerSeconds) => {
-	setInterval(() => {
-		if (timerSeconds > 0) {
-			timerSeconds--;
-		} else {
-			if (timerMinutes > 0) {
-				timerMinutes--;
-				timerSeconds = 59;
-			} else {
-				if (timerHours > 0) {
-					timerHours--;
-					timerMinutes = 59;
-					timerSeconds = 59;
-				} else {
-					if (timerDays > 0) {
-						timerDays--;
-						timerHours = 23;
-						timerMinutes = 59;
-						timerSeconds = 59;
-					} else {
-						// Таймер закончился
-						clearInterval(console.log('time is over'));
-					}
-				}
-			}
-		}
-
-		const timerElement = document.getElementById('timer');
-		if (timerElement) {
-			timerElement.innerHTML = setTimer(timerDays, timerHours, timerMinutes, timerSeconds);
-		}
-	}, 1000);
-
-	return `<div class="${sampleStyles.timerStyles}" id="timer">${setTimer(timerDays, timerHours, timerMinutes, timerSeconds)}</div>`;
-};
