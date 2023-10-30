@@ -1,13 +1,8 @@
 @import '../css/variables/variables.scss';
 
 
-
-#timer {
-	margin: 0;
-}
-
 // ============ Timer styles =================
-.timerStyles {
+.timerContainer {
 	display: flex;
 
 	div {
@@ -32,15 +27,15 @@
 
 // ==============================================
 .card {
-	margin: 30px;
+	max-width: 528px;
+	width: 100%;
+	min-height: 654px;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 12px 16px;
+	padding: 24px;
 	border: 1px solid $greyColor;
-	max-width: 264px;
-	min-height: 327px;
 	font-family: $font-family;
 	border-radius: 6px;
 	transition: .3s ease-in-out;
@@ -50,10 +45,6 @@
 	&:hover {
 		border: 1px solid $hardPrimaryColor;
 		box-shadow: 1px 1px 8px 0px $hardPrimaryColor;
-
-		.cardBtns {
-			opacity: 1;
-		}
 
 		.content {
 			h2 {
@@ -69,11 +60,12 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
-	width: 185px;
+	max-width: 185px;
+	width: 100%;
 
 	position: absolute;
-	top: 15px;
-	left: 15px;
+	top: 24px;
+	left: 24px;
 }
 
 .label {
@@ -107,15 +99,15 @@
 	display: none;
 }
 
-// ============ Labels =============
+// ============ Labels end =============
 
 
 .cardImage {
 	margin: 0px;
 
 	img {
-		width: 245px;
-		height: 245px;
+		width: 510px;
+		width: 100%;
 		object-fit: cover;
 	}
 }
@@ -149,14 +141,13 @@
 }
 
 .cardBtns {
-	opacity: 0;
-	transition: .3s ease-in-out;
+	display: flex;
 
 	a {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 40px;
+		// width: 40px;
 		height: 40px;
 		border-radius: 50%;
 		border: 1px solid $greyColor;
@@ -171,6 +162,21 @@
 				filter: brightness(0) invert(1);
 			}
 		}
+	}
+
+	.like {
+		flex: 0;
+		width: 100%;
+	}
+
+	.bag {
+		flex: 1;
+		width: 100%;
+	}
+
+	.eye {
+		flex: 0;
+		width: 100%;
 	}
 
 }

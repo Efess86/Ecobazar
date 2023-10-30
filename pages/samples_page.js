@@ -114,12 +114,12 @@ const CARD_LARGE_ARRAY = [
 		buy: '',
 		itemLink: '',
 		like: '',
-		imgUrl: '/assets/images/green_apples.png',
+		imgUrl: '/assets/images/large_apples.jpg',
 		rating: 4.5,
-		timerDays: '1',
-		timerHours: '4',
-		timerMinutes: '23',
-		timerSeconds: '5'
+		timerDays: '',
+		timerHours: '2',
+		timerMinutes: '',
+		timerSeconds: ''
 	},
 	{
 		id: 'timer2',
@@ -134,9 +134,9 @@ const CARD_LARGE_ARRAY = [
 		buy: 'https://www.google.com/',
 		itemLink: 'https://www.google.com/',
 		like: 'https://www.google.com/',
-		imgUrl: '/assets/images/green_apples.png',
+		imgUrl: '/assets/images/large_apples.jpg',
 		rating: 4.5,
-		timerDays: '1',
+		timerDays: '0',
 		timerHours: '2',
 		timerMinutes: '15',
 		timerSeconds: '12'
@@ -154,9 +154,9 @@ const CARD_LARGE_ARRAY = [
 		buy: 'https://www.google.com/',
 		itemLink: 'https://www.google.com/',
 		like: 'https://www.google.com/',
-		imgUrl: '/assets/images/green_apples.png',
+		imgUrl: '/assets/images/large_apples.jpg',
 		rating: 4.5,
-		timerDays: '1',
+		timerDays: '0',
 		timerHours: '4',
 		timerMinutes: '2',
 		timerSeconds: '5'

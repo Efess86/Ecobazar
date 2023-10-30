@@ -2,6 +2,7 @@ import cardStyles from "./card-large.module.scss";
 import { starRating } from "../star-rating/star-rating";
 import { setPrice } from "../price/price";
 import { setTimer } from "../timer/timer";
+import { btnSmallGhost } from "../buttons/btn-small";
 
 export const cardLarge = ({
 	id,
@@ -28,42 +29,6 @@ export const cardLarge = ({
 	const newItemClass = newItem === "" ? cardStyles.displayNone : cardStyles.label;
 	const outOfStockClass = outOfStock === "" ? cardStyles.displayNone : cardStyles.label;
 
-	let intervalId;
-
-	intervalId = setInterval(() => {
-		if (timerSeconds > 0) {
-			timerSeconds--;
-		} else {
-			if (timerMinutes > 0) {
-				timerMinutes--;
-				timerSeconds = 59;
-			} else {
-				if (timerHours > 0) {
-					timerHours--;
-					timerMinutes = 59;
-					timerSeconds = 59;
-				} else {
-					if (timerDays > 0) {
-						timerDays--;
-						timerHours = 23;
-						timerMinutes = 59;
-						timerSeconds = 59;
-					} else {
-						// Таймер закончился
-						clearInterval(intervalId);
-						console.log('time is over');
-						return;
-					}
-				}
-			}
-		}
-
-		const timerElement = document.getElementById(id);
-		if (timerElement) {
-			timerElement.innerHTML = setTimer(timerDays, timerHours, timerMinutes, timerSeconds);
-		}
-	}, 1000);
-
 
 	return `
 	<div class="${cardStyles.card}">
@@ -86,14 +51,14 @@ export const cardLarge = ({
 		</div>
 		<div class="${cardStyles.contentContainer}">
 			<div class="${cardStyles.cardBtns}">
-				<a href="#">
+				<a href="#" ${cardStyles.like}>
 					<img src="/assets/icons/heart.svg" alt="like button">
 				</a>
-				<a href="#">
+				<a href="#" ${cardStyles.bag}>
 					Add to Cart
 					<img src="/assets/icons/bag.svg" alt="show button">
 				</a>
-				<a href="#">
+				<a href="#" ${cardStyles.eye}>
 					<img src="/assets/icons/eye.svg" alt="show button">
 				</a>
 			</div>
@@ -101,9 +66,10 @@ export const cardLarge = ({
 				<h2>${title}</h2>
 				${setPrice(price, oldPrice, priceSize)}
 				${starRating(rating)}
-				<div class="${cardStyles.timerStyles}" id="${id}">${setTimer(timerDays, timerHours, timerMinutes, timerSeconds)}</div>
+				${setTimer(id, timerDays, timerHours, timerMinutes, timerSeconds, cardStyles.timerContainer)}
 			</div>
 		</div>
+		${btnSmallGhost('test btn')}
 	</div>
 	`;
 }
