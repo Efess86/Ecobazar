@@ -1,0 +1,23 @@
+@import '../css/variables/variables.scss';
+
+
+.input {
+	border: 1px solid $greyColor;
+	border-radius: 6px;
+	height: 49px;
+	padding: 14px 16px;
+	color: $secondGreyColor;
+	font: 400 16px $font-family;
+
+	&::placeholder {
+		color: $secondGreyColor;
+	}
+}
+
+.invalidInput {
+	border: 2px solid red;
+}
+
+.validInput {
+	border: 2px solid skyblue;
+}

@@ -10,62 +10,46 @@
 
 <body>
 
-	<div id="timer">
-	</div>
-
-
 	<script>
-		let timerSeconds = 12;
-		let timerMinutes = 43;
-		let timerHours = 4;
-		let timerDays = 1;
-		// Получение элемента, где будет отображаться таймер
-		let timerElement = document.getElementById('timer');
-
-
-		const formatTimerValue = (value) => {
-			return value < 10 ? '0' + value : value;
-		};
-
-		// Запуск таймера
-		setInterval(updateTimer, 1000);
-
-		// Функция обновления таймера
-		function updateTimer() {
-			// Уменьшение секунд
-			timerSeconds--;
-
-			if (timerSeconds < 0) {
-				timerSeconds = 59;
-				timerMinutes--;
-
-				if (timerMinutes < 0) {
-					timerMinutes = 59;
-					timerHours--;
-
-					if (timerHours < 0) {
-						timerHours = 23;
-						timerDays--;
-
-						if (timerDays < 0) {
-							// Таймер закончился
-							timerDays = 0;
-							timerHours = 0;
-							timerMinutes = 0;
-							timerSeconds = 0;
-						}
-					}
-				}
-			}
-
-			// Обновление отображения таймера
-			timerElement.textContent = formatTimerValue(timerDays) + ' : ' +
-				formatTimerValue(timerHours) + ' : ' +
-				formatTimerValue(timerMinutes) + ' : ' +
-				formatTimerValue(timerSeconds);
+		const test = () => {
+			console.log('work');
 
 		}
+
+
+		const emailInput = document.getElementById('emailInput');
+
+		emailInput.addEventListener('blur', function () {
+			if (validateEmail(emailInput.value)) {
+				emailInput.classList.remove('invalid-input');
+				emailInput.classList.add('valid-input');
+			} else {
+				emailInput.classList.remove('valid-input');
+				emailInput.classList.add('invalid-input');
+			}
+		});
+
+		function validateEmail(email) {
+			const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			return emailRegex.test(email);
+		}
 	</script>
+
+	<style>
+		.valid-input {
+			border: 3px solid rgb(10, 124, 230);
+		}
+
+		.invalid-input {
+			border: 3px solid red;
+		}
+	</style>
+
+	<input type="email" id="emailInput" required onblur=test()>
+	<button type="submit">Отправить</button>
+
+
+
 </body>
 
 </html>

@@ -1,0 +1,27 @@
+@import '../css/variables/variables.scss';
+
+.socialContaner {
+	display: flex;
+	gap: 8px;
+	background-color: #fff;
+	width: max-content;
+
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		transition: background .3s ease-in-out;
+
+		&:hover {
+			border: none;
+			background-color: $primaryColor;
+
+			img {
+				filter: brightness(0) invert(1);
+			}
+		}
+	}
+}

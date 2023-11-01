@@ -51,14 +51,14 @@ export const cardLarge = ({
 		</div>
 		<div class="${cardStyles.contentContainer}">
 			<div class="${cardStyles.cardBtns}">
-				<a href="#" ${cardStyles.like}>
+				<a href="#" class="${cardStyles.like}">
 					<img src="/assets/icons/heart.svg" alt="like button">
 				</a>
-				<a href="#" ${cardStyles.bag}>
+				<a href="#" class="${cardStyles.bag}">
 					Add to Cart
 					<img src="/assets/icons/bag.svg" alt="show button">
 				</a>
-				<a href="#" ${cardStyles.eye}>
+				<a href="#" class="${cardStyles.eye}">
 					<img src="/assets/icons/eye.svg" alt="show button">
 				</a>
 			</div>
@@ -69,7 +69,6 @@ export const cardLarge = ({
 				${setTimer(id, timerDays, timerHours, timerMinutes, timerSeconds, cardStyles.timerContainer)}
 			</div>
 		</div>
-		${btnSmallGhost('test btn')}
 	</div>
 	`;
 }
