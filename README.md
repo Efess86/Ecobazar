@@ -1,6 +1,7 @@
 # Ecobazar
 
 Hey, everybody. 
+<<<<<<< HEAD
 
 I invite you to see my first big project (online food store). 
 Now it is under development, but when it will be ready I will immediately report about it.
@@ -38,4 +39,3 @@ Install Ecobazar with npm
 ## Authors
 
 - [@Kolpaxidis.V](https://github.com/Efess86)
-
