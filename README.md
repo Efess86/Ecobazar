@@ -1,7 +1,6 @@
 # Ecobazar
 
-Hey, everybody. 
-<<<<<<< HEAD
+Hey, everybody.
 
 I invite you to see my first big project (online food store). 
 Now it is under development, but when it will be ready I will immediately report about it.
@@ -14,7 +13,7 @@ Link to the design:
 
 **Project Technologies:**
 
-• Vite js.
+• Vite js
 
 • Scss
 
@@ -22,7 +21,7 @@ That's all )))
 
 During the development stage not all components will be visible. To see the component you are interested in, you need to import it and call it. In the main.js file I left all imports and calls (they are commented out).
 
-If you have any questions or suggestions for work you can contact me via linkedIn https://www.linkedin.com/in/kolpaxidis-v/.
+If you have any questions or suggestions for work you can contact me via linkedIn https://www.linkedin.com/in/kolpaxidis-v/
 
 ## Installation
 
