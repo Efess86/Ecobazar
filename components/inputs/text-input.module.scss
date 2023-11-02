@@ -1,5 +1,9 @@
 @import '../css/variables/variables.scss';
 
+.inputContainer {
+	background-color: $greyColor;
+	margin: 10px;
+}
 
 .input {
 	border: 1px solid $greyColor;
@@ -15,9 +19,9 @@
 }
 
 .invalidInput {
-	border: 2px solid red;
+	border: 2px solid $dangerColor;
 }
 
 .validInput {
-	border: 2px solid skyblue;
+	border: 2px solid $primaryColor;
 }

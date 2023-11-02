@@ -27,4 +27,4 @@ export const showSocial = (
 		</a>
 	</div>
 	`;
-}
+};

@@ -1,7 +1,6 @@
 import mainStyles from './main.module.scss';
 
-const app = document.querySelector('#app');
-
+const app = document.getElementById('app');
 
 // ================ samples_page import ================
 // import { cardSmallComp } from "./pages/samples_page";
@@ -30,7 +29,10 @@ import { textInput } from './components/inputs/text-input';
 // app.insertAdjacentHTML('beforeend', setTimerSale("1", "0", "0", "5"));
 // app.insertAdjacentHTML('beforeend', setPrice("$12,99", "$29,99", "24"));
 // app.insertAdjacentHTML('beforebegin', setTimer('timer112', '2', '7', '12', '9', `${mainStyles.timerContainer}`));
+// app.append(setTimer('timer112', '2', '7', '12', '9', `${mainStyles.timerContainer}`));
 // app.insertAdjacentHTML('beforeend', showSocial('_blank', '_self', '_blank', '_self', 'https://www.facebook.com', 'https://twitter.com', 'https://www.pinterest.com', 'https://www.instagram.com'));
-app.insertAdjacentHTML('beforeend', textInput('id1', 'text', 'required', "Enter your name"));
-app.insertAdjacentHTML('beforeend', textInput('id2', 'number', '', "Enter amount"));
+
+app.appendChild(textInput('id1', 'text', 'required', "Enter your name"));
+app.appendChild(textInput('id2', 'number', '', "Enter amount"));
+
 
