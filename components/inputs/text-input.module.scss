@@ -1,8 +1,19 @@
 @import '../css/variables/variables.scss';
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
 .inputContainer {
-	background-color: $greyColor;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
 	margin: 10px;
+	position: relative;
+
+	width: 400px;
 }
 
 .input {
@@ -10,8 +21,9 @@
 	border-radius: 6px;
 	height: 49px;
 	padding: 14px 16px;
-	color: $secondGreyColor;
+	color: $inputTextColor;
 	font: 400 16px $font-family;
+	transition: .3s ease-in-out;
 
 	&::placeholder {
 		color: $secondGreyColor;
@@ -24,4 +36,17 @@
 
 .validInput {
 	border: 2px solid $primaryColor;
+}
+
+.inputInfo {
+	font: 500 14px $font-family;
+}
+
+.inputIcon {
+	position: absolute;
+	top: 14px;
+	right: 16px;
+	width: 20px;
+	height: 20px;
+	transition: .3s ease-in-out;
 }

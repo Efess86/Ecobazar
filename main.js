@@ -33,6 +33,5 @@ import { textInput } from './components/inputs/text-input';
 // app.insertAdjacentHTML('beforeend', showSocial('_blank', '_self', '_blank', '_self', 'https://www.facebook.com', 'https://twitter.com', 'https://www.pinterest.com', 'https://www.instagram.com'));
 
 app.appendChild(textInput('id1', 'text', 'required', "Enter your name"));
-app.appendChild(textInput('id2', 'number', '', "Enter amount"));
-
-
+app.appendChild(textInput('id2', 'number', '', "Enter amount (numbers only)"));
+app.appendChild(textInput('id3', 'text', '', "Enter something",));

@@ -12,18 +12,41 @@ export const textInput = (id, type, required, placeholder) => {
 		input.required = true;
 	}
 	input.placeholder = placeholder;
+	input.style.background = 'rgba(255, 255, 255)';
 
-	input.addEventListener('focus', (el) => {
-		el.target.classList.remove(textInputStyles.invalidInput);
-		el.target.classList.add(textInputStyles.validInput);
+	const inputIcon = document.createElement('img');
+	inputIcon.src = '/assets/icons/inputs/success-icon.svg';
+	inputIcon.classList.add(textInputStyles.inputIcon);
+	inputIcon.style.opacity = 0;
+
+	input.addEventListener('input', (e) => {
+		if (e.target.value == '') {
+			inputIcon.style.opacity = 0;
+			input.style.background = 'rgba(255, 255, 255)';
+		} else {
+			inputIcon.style.opacity = 1;
+			input.style.background = 'rgba(0, 178, 7, 0.05)';
+		}
 	});
 
-	input.addEventListener('blur', (el) => {
-		el.target.classList.remove(textInputStyles.validInput);
-		el.target.classList.add(textInputStyles.invalidInput);
-	});
+	// input.addEventListener('focus', (el) => {
+	// 	el.target.classList.remove(textInputStyles.invalidInput);
+	// 	el.target.classList.add(textInputStyles.validInput);
+	// });
+
+	// input.addEventListener('blur', (el) => {
+	// 	el.target.classList.remove(textInputStyles.validInput);
+	// 	el.target.classList.add(textInputStyles.invalidInput);
+	// });
 
 	inputContainer.appendChild(input);
+	inputContainer.appendChild(inputIcon);
+
+
+	// const formValidation = () => {
+
+	// }
+
 
 	return inputContainer;
 };
