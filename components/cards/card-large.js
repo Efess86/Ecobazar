@@ -66,6 +66,7 @@ export const cardLarge = ({
 				<h2>${title}</h2>
 				${setPrice(price, oldPrice, priceSize)}
 				${starRating(rating)}
+				<span>Hurry up! Offer ends In:</span>
 				${setTimer(id, timerDays, timerHours, timerMinutes, timerSeconds, cardStyles.timerContainer)}
 			</div>
 		</div>

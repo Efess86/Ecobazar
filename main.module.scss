@@ -1,0 +1,31 @@
+@import 'css/variables/variables.scss';
+
+
+.timerContainer {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+
+	div {
+		max-width: 60px;
+		width: 100%;
+		min-height: 37px;
+		text-align: center;
+
+		p {
+			font: 500 18px $font-family;
+		}
+
+		span {
+			font: 500 10px $font-family;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			color: $secondGreyColor;
+		}
+	}
+
+	colon {
+		font: 400 20px $font-family;
+		color: $secondGreyColor;
+	}
+}

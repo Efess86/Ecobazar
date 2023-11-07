@@ -4,13 +4,14 @@
 // ============ Timer styles =================
 .timerContainer {
 	display: flex;
+	justify-content: center;
+	gap: 10px;
 
 	div {
 		max-width: 60px;
 		width: 100%;
 		min-height: 37px;
 		text-align: center;
-		// border: 1px solid red;
 
 		p {
 			font: 500 18px $font-family;
@@ -23,13 +24,17 @@
 			color: $secondGreyColor;
 		}
 	}
+
+	colon {
+		font: 400 20px $font-family;
+		color: $secondGreyColor;
+	}
 }
 
 // ==============================================
 .card {
 	max-width: 528px;
 	width: 100%;
-	min-height: 654px;
 
 	display: flex;
 	flex-direction: column;
@@ -39,6 +44,8 @@
 	font-family: $font-family;
 	border-radius: 6px;
 	transition: .3s ease-in-out;
+
+	box-shadow: 0px 0px 3px 1px rgba(131, 131, 131, 0.75);
 
 	position: relative;
 
@@ -117,15 +124,23 @@
 }
 
 .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 	h2 {
 		transition: .3s ease-in-out;
 		line-height: 150%;
-		font: 400 14px $font-family;
+		font: 400 18px $font-family;
 	}
 
 	p {
 		line-height: 150%;
 		font: 500 16px $font-family;
+	}
+
+	span {
+		margin: 19px 0 0 0;
 	}
 }
 
@@ -144,6 +159,7 @@
 	display: flex;
 	gap: 8px;
 	justify-content: center;
+	margin: 0 0 37px 0;
 
 	.like,
 	.eye {
