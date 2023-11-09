@@ -12,7 +12,7 @@ const app = document.getElementById('app');
 // =================== Direct import ===================
 // import { setTimer } from "./components/timer/timer";
 // import { setPrice } from "./components/price/price";
-// import { drawSocial } from './components/social/social';
+import { drawSocial } from './components/social/social';
 // import { textInput } from './components/inputs/text-input';
 
 
@@ -28,7 +28,7 @@ const app = document.getElementById('app');
 // app.insertAdjacentHTML('beforeend', setPrice("$12,99", "$29,99", "24"));
 // app.insertAdjacentHTML('beforebegin', setTimer('timer112', '2', '7', '12', '9', `${mainStyles.timerContainer}`));
 // app.insertAdjacentHTML('beforeend', drawSocial());
-// app.appendChild(drawSocial());
+app.appendChild(drawSocial());
 
 // app.appendChild(textInput('id1', 'text', 'required', "Enter your name"));
 // app.appendChild(textInput('id2', 'number', '', "Enter amount (numbers only)"));
