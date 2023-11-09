@@ -1,6 +1,6 @@
 import emailInputStyles from './email-input.module.scss';
 
-export const emailInput = (id, type, required, placeholder, inputInfoText, inputInfoTextColor) => {
+export const emailInput = (id, required, placeholder, inputInfoText, inputInfoTextColor) => {
 	const inputContainer = document.createElement('div');
 	inputContainer.classList.add(emailInputStyles.inputContainer);
 
@@ -11,7 +11,7 @@ export const emailInput = (id, type, required, placeholder, inputInfoText, input
 
 	const input = document.createElement('input');
 	input.classList.add(emailInputStyles.input);
-	input.type = type;
+	input.type = 'email';
 	input.id = id;
 	if (required) {
 		input.required = true;

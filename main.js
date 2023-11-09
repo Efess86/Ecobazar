@@ -12,8 +12,9 @@ const app = document.getElementById('app');
 // =================== Direct import ===================
 // import { setTimer } from "./components/timer/timer";
 // import { setPrice } from "./components/price/price";
-import { drawSocial } from './components/social/social';
+// import { drawSocial } from './components/social/social';
 // import { textInput } from './components/inputs/text-input';
+import { emailInput } from './components/inputs/email-input';
 
 
 
@@ -27,9 +28,9 @@ import { drawSocial } from './components/social/social';
 // ===================== Direct DRAW =======================
 // app.insertAdjacentHTML('beforeend', setPrice("$12,99", "$29,99", "24"));
 // app.insertAdjacentHTML('beforebegin', setTimer('timer112', '2', '7', '12', '9', `${mainStyles.timerContainer}`));
-// app.insertAdjacentHTML('beforeend', drawSocial());
-app.appendChild(drawSocial());
+// app.appendChild(drawSocial());
 
 // app.appendChild(textInput('id1', 'text', 'required', "Enter your name"));
 // app.appendChild(textInput('id2', 'number', '', "Enter amount (numbers only)"));
 // app.appendChild(textInput('id3', 'text', '', "Enter something",));
+app.appendChild(emailInput('id-223b', true, 'Enter your email', 'info text', 'red'));

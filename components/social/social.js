@@ -28,7 +28,7 @@ const social_array = [
 	}
 ];
 
-
+// create contaner with a tag and img in a tag. Draw it and
 export const drawSocial = () => {
 	const socialContainer = document.createElement('div');
 	socialContainer.classList.add(socialStyles.socialContaner);
@@ -50,7 +50,7 @@ export const drawSocial = () => {
 
 		socialLink.addEventListener('click', function (event) {
 			event.preventDefault();
-			const href = this.getAttribute('data-href');
+			const href = this.getAttribute('href'); // always use function not arrow function with this!!!
 			window.open(href, 'twitterwindow', 'left=20,top=20,width=1100,height=600,toolbar=0,resizable=1');
 		});
 	});
