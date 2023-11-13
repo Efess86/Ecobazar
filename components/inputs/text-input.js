@@ -28,25 +28,8 @@ export const textInput = (id, type, required, placeholder) => {
 			input.style.background = 'rgba(0, 178, 7, 0.05)';
 		}
 	});
-
-	// input.addEventListener('focus', (el) => {
-	// 	el.target.classList.remove(textInputStyles.invalidInput);
-	// 	el.target.classList.add(textInputStyles.validInput);
-	// });
-
-	// input.addEventListener('blur', (el) => {
-	// 	el.target.classList.remove(textInputStyles.validInput);
-	// 	el.target.classList.add(textInputStyles.invalidInput);
-	// });
-
 	inputContainer.appendChild(input);
 	inputContainer.appendChild(inputIcon);
-
-
-	// const formValidation = () => {
-
-	// }
-
 
 	return inputContainer;
 };

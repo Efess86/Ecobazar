@@ -4,7 +4,6 @@
 	display: flex;
 	flex-direction: column;
 	gap: 6px;
-	margin: 10px;
 }
 
 .input {
@@ -14,20 +13,22 @@
 	padding: 14px 16px;
 	color: $secondGreyColor;
 	font: 400 16px $font-family;
+	transition: .3s ease-in-out;
 
 	&::placeholder {
 		color: $secondGreyColor;
 	}
 }
 
-.invalidInput {
-	border: 1px solid $dangerColor;
-}
-
-.validInput {
-	border: 1px solid $primaryColor;
-}
-
 .inputInfo {
 	font: 500 14px $font-family;
+	transition: .3s ease-in-out;
+}
+
+.inputIcon {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	width: 20px;
+	height: 20px;
 }
