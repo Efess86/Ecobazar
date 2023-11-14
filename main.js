@@ -14,7 +14,8 @@ const app = document.getElementById('app');
 // import { setPrice } from "./components/price/price";
 // import { drawSocial } from './components/social/social';
 // import { textInput } from './components/inputs/text-input';
-import { emailInput } from './components/inputs/email-input';
+// import { emailInput } from './components/inputs/email-input';
+import { selectInput } from './components/inputs/select-input';
 
 
 
@@ -33,4 +34,5 @@ import { emailInput } from './components/inputs/email-input';
 // app.appendChild(textInput('id1', 'text', 'required', "Enter your name"));
 // app.appendChild(textInput('id2', 'number', '', "Enter amount (numbers only)"));
 // app.appendChild(textInput('id3', 'text', '', "Enter something",));
-app.appendChild(emailInput('id-223b', true, 'Enter your email', 'info text', 'red'));
+// app.appendChild(emailInput('id-223b', true, 'Enter your email'));
+app.appendChild(selectInput('sel_id-1', true, 'Select'));

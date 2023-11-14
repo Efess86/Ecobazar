@@ -9,50 +9,7 @@
 </head>
 
 <body>
-
-	<img src="../public/assets/icons/inputs/success-icon.svg" alt="">
-
-	<script>
-		const test = () => {
-			console.log('work');
-
-		}
-
-
-		const emailInput = document.getElementById('emailInput');
-
-		emailInput.addEventListener('blur', function () {
-			if (validateEmail(emailInput.value)) {
-				emailInput.classList.remove('invalid-input');
-				emailInput.classList.add('valid-input');
-			} else {
-				emailInput.classList.remove('valid-input');
-				emailInput.classList.add('invalid-input');
-			}
-		});
-
-		function validateEmail(email) {
-			const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-			return emailRegex.test(email);
-		}
-	</script>
-
-	<style>
-		.valid-input {
-			border: 3px solid rgb(10, 124, 230);
-		}
-
-		.invalid-input {
-			border: 3px solid red;
-		}
-	</style>
-
-	<input type="email" id="emailInput" required onblur=test()>
-	<button type="submit">Отправить</button>
-
-	<img src="../public/assets/icons/inputs/alert-circle.svg" alt="">
-	<img src="../public/assets/icons/inputs/alert-triangle.svg" alt="">
-
+	
 </body>
 
 </html>

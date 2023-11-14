@@ -1,12 +1,11 @@
 import emailInputStyles from './email-input.module.scss';
 
-export const emailInput = (id, required, placeholder, inputInfoText, inputInfoTextColor) => {
+export const emailInput = (id, required, placeholder) => {
 	const inputContainer = document.createElement('div');
 	inputContainer.classList.add(emailInputStyles.inputContainer);
 
 	const inputInfo = document.createElement('span');
 	inputInfo.classList.add(emailInputStyles.inputInfo);
-	inputInfo.style.color = inputInfoTextColor;
 
 	const input = document.createElement('input');
 	input.classList.add(emailInputStyles.input);
