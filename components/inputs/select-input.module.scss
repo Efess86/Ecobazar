@@ -10,13 +10,17 @@
 	border: 1px solid $greyColor;
 	border-radius: 6px;
 	height: 49px;
-	padding: 14px 16px;
-	color: $secondGreyColor;
+	padding: 8px 40px 8px 16px;
+	color: $inputGrey;
 	font: 400 16px $font-family;
 	transition: .3s ease-in-out;
 
+	appearance: none;
+	background: url('assets/icons/inputs/select-arrow.svg') no-repeat right;
+	background-position-x: calc(100% - 16px);
+
 	&::placeholder {
-		color: $secondGreyColor;
+		color: $inputGrey;
 	}
 }
 

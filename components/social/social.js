@@ -50,7 +50,7 @@ export const drawSocial = () => {
 
 		socialLink.addEventListener('click', function (event) {
 			event.preventDefault();
-			const href = this.getAttribute('href'); // always use function not arrow function with this!!!
+			const href = this.getAttribute('href'); // always use function not arrow function with this.something !!!
 			window.open(href, 'twitterwindow', 'left=20,top=20,width=1100,height=600,toolbar=0,resizable=1');
 		});
 	});
