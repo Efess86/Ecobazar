@@ -2,7 +2,6 @@ import cardStyles from "./card-large.module.scss";
 import { starRating } from "../star-rating/star-rating";
 import { setPrice } from "../price/price";
 import { setTimer } from "../timer/timer";
-import { btnSmallGhost } from "../buttons/btn-small";
 
 export const cardLarge = ({
 	id,

@@ -2,7 +2,16 @@ import cardStyles from './card-small.module.scss';
 import { starRating } from '../star-rating/star-rating';
 import { setPrice } from '../price/price';
 
-export const cardSmall = ({ title, price, oldPrice, buy, itemLink, like, imgUrl, rating }) => {
+export const cardSmall = ({
+  title,
+  price,
+  oldPrice,
+  buy,
+  itemLink,
+  like,
+  imgUrl,
+  rating }) => {
+
   return `
     <div class="${cardStyles.card}">
 

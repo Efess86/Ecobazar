@@ -29,11 +29,15 @@ Install Ecobazar with npm
 
 ```bash
   git clone https://github.com/Efess86/Ecobazar.git
+```
   cd to folder where you clone project
+
+```bash
   npm install
   npm run dev
-  ctrl + click on ip in terminal
 ```
+  ctrl + click on ip in terminal
+
     
 ## Authors
 

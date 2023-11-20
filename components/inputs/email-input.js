@@ -24,7 +24,6 @@ export const emailInput = (id, required, placeholder) => {
 	inputInfo.textContent = 'Validation warning';
 	inputInfo.style.color = '#FF8A00';
 
-
 	input.addEventListener('input', (e) => {
 		const regEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -42,13 +41,9 @@ export const emailInput = (id, required, placeholder) => {
 			inputInfo.style.color = '#EA4B48';
 		}
 	})
-
 	inputContainer.appendChild(inputIcon);
 	inputContainer.appendChild(input);
 	inputContainer.appendChild(inputInfo);
-
-
-
 
 	return inputContainer;
 };

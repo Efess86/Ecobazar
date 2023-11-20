@@ -1,6 +1,7 @@
-// Note that timer need everytime add styles when you call it. I make it because I have same functional with diffrent design.
+// Note that timer needs styles when you call it. I make it because I have same functional with diffrent design.
 
-// Timer styles: 
+// Timer styles sample: 
+
 // .timerContainer {
 // 	display: flex;
 // 	justify-content: center;
@@ -29,7 +30,6 @@
 // 		color: $secondGreyColor;
 // 	}
 // }
-
 
 export const setTimer = (id, timerDays, timerHours, timerMinutes, timerSeconds, timerStyles) => {
 
