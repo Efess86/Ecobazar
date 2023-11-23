@@ -36,4 +36,13 @@ import { selectInput } from './components/inputs/select-input';
 // app.appendChild(textInput('id3', 'text', '', "Enter something",));
 // app.appendChild(emailInput('id-223b', true, 'Enter your email'));
 // app.appendChild(selectInput('id-1_select', ['Tomato', 'Apples', 'Banana']));
-app.insertAdjacentHTML('beforeend', selectInput('id-1-select', ['Strawberry', 'Lemons', 'Grapes', 'Appples']))
+
+app.insertAdjacentHTML('beforeend', selectInput('id-1-select', ['Strawberry', 'Lemons', 'Grapes', 'Appples']));
+let selectRes;
+const selectElement = document.getElementById('id-1-select');
+const handlerSelectChange = (e) => {
+	const selectValue = e.target.value;
+	selectRes = selectValue;
+	console.log(selectRes);
+};
+selectElement.addEventListener('change', handlerSelectChange);
