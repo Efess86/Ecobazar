@@ -1,0 +1,14 @@
+@import '../../../css/variables/variables.scss';
+
+.btn {
+	border: none;
+	background-color: transparent;
+	font: 400 12px $font-family;
+	color: $inputGrey;
+	transition: .2s ease-in-out;
+
+	&:hover {
+		transform: scale(1.05);
+		text-decoration: underline;
+	}
+}

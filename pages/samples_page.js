@@ -26,7 +26,7 @@ const CARD_SMALL_ARRAY = [
 	},
 
 	{
-		title: 'Chanise Cabbage',
+		title: 'Patates Cabbage',
 		price: '$6.59',
 		oldPrice: '$12,99',
 		priceSize: 14,
@@ -34,11 +34,11 @@ const CARD_SMALL_ARRAY = [
 		itemLink: 'https://www.google.com/',
 		like: 'https://www.google.com/',
 		imgUrl: '/assets/images/green_apples.png',
-		rating: 4.1,
+		rating: 1,
 	},
 
 	{
-		title: 'Green Apples',
+		title: 'Kostas',
 		price: '$8.99',
 		oldPrice: '$12,99',
 		priceSize: 14,

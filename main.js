@@ -15,8 +15,6 @@ const app = document.getElementById('app');
 // import { drawSocial } from './components/social/social';
 // import { textInput } from './components/inputs/text-input';
 // import { emailInput } from './components/inputs/email-input';
-// import { selectInput } from './components/inputs/select-input';
-import { header } from './components/header/header';
 
 
 
@@ -36,17 +34,47 @@ import { header } from './components/header/header';
 // app.appendChild(textInput('id2', 'number', '', "Enter amount (numbers only)"));
 // app.appendChild(textInput('id3', 'text', '', "Enter something",));
 // app.appendChild(emailInput('id-223b', true, 'Enter your email'));
-// app.appendChild(selectInput('id-1_select', ['Tomato', 'Apples', 'Banana']));
 
-// app.insertAdjacentHTML('beforeend', selectInput('id-1-select', ['Strawberry', 'Lemons', 'Grapes', 'Appples']));
+
+
+
+// ====================== Select Input ==================
+// import { selectInput } from './components/inputs/select-input';
+// app.insertAdjacentHTML('beforeend', selectInput('id-1-select', ['Strawberry', 'Lemons', 'Grapes', 'Apples']));
 // let selectRes = 'Strawberry'; // set default value (must be a first value in array that u pass when call func)
 // const selectElement = document.getElementById('id-1-select');
-// const handlerSelectChange = (e) => {
-// 	const selectValue = e.target.value;
-// 	selectRes = selectValue;
-// 	console.log(selectRes);
-// };
 // console.log(selectRes);
-// selectElement.addEventListener('change', handlerSelectChange);
+// selectElement.addEventListener('change', (e) => {
+// 	selectRes = e.target.value;
+// 	console.log(selectRes);
+// });
 
-app.insertAdjacentHTML('beforeend', header());
+
+// ============= Currency / Language (header) ==============
+// import { setCurrencyLanguage } from './components/header/currencyLanguage/currencyLanguage';
+// app.insertAdjacentHTML('beforeend', setCurrencyLanguage());
+
+// let currency = 'usd';
+// let language = 'eng';
+
+// const currencyState = document.getElementById('header-currency');
+// const languageState = document.getElementById('header-language');
+
+// console.log(currency);
+// currencyState.addEventListener('change', (e) => {
+// 	currency = e.target.value;
+// 	console.log(currency);
+// });
+
+// console.log(language);
+// languageState.addEventListener('change', (e) => {
+// 	language = e.target.value;
+// 	console.log(language);
+// });
+
+// =============== Sign-In / Sign-Up (header) ===============
+// import { signInSignUp } from './components/header/signIn-signUp/signIn-signUp';
+// app.insertAdjacentHTML('beforeend', signInSignUp('Sign in', 'Sign Up'));
+
+import { search } from './components/header/search/search';
+app.insertAdjacentHTML('beforeend', search('Search...'));

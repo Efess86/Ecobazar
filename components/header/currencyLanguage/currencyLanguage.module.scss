@@ -1,0 +1,9 @@
+@import '../../../css/variables/variables.scss';
+
+.currencyLanguage {
+	font: 400 12px $font-family;
+
+	select {
+		color: $inputGrey;
+	}
+}
