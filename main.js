@@ -76,5 +76,15 @@ const app = document.getElementById('app');
 // import { signInSignUp } from './components/header/signIn-signUp/signIn-signUp';
 // app.insertAdjacentHTML('beforeend', signInSignUp('Sign in', 'Sign Up'));
 
-import { search } from './components/header/search/search';
-app.insertAdjacentHTML('beforeend', search('Search...'));
+// =============== Search (header) ===============
+// import { search } from './components/header/search/search';
+// app.insertAdjacentHTML('beforeend', search('Search...'));
+
+// =============== Cart Icon (header) ===============
+// import { cartIcon } from './components/header/cartIcon/cartIcon';
+// app.insertAdjacentHTML('beforeend', cartIcon(2));
+
+
+// =============== Cart Amount (header) ===============
+import { cartAmount } from './components/header/cartAmmount/cartAmount';
+app.insertAdjacentHTML('beforeend', cartAmount('$', '34.28'));

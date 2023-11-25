@@ -1,0 +1,14 @@
+@import '../../../css/variables/variables.scss';
+
+
+.cartAmount {
+	span {
+		font: 400 11px $font-family;
+		color: $inputGrey;
+	}
+
+	p {
+		font: 500 14px $font-family;
+		color: #000000;
+	}
+}

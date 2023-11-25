@@ -1,0 +1,28 @@
+@import '../../../css/variables/variables.scss';
+
+
+.cartIcon {
+	position: relative;
+	width: max-content;
+
+	img {
+		width: 36px;
+		height: 36px;
+	}
+
+	p {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 18px;
+		width: 18px;
+		font: 400 10px $font-family;
+		background-color: $hardPrimaryColor;
+		border-radius: 50%;
+		color: #FFFFFF;
+		border: 1px solid #FFFFFF;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}

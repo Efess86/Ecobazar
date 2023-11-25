@@ -15,7 +15,7 @@ export const textInput = (id, type, required, placeholder) => {
 	input.style.background = 'rgba(255, 255, 255)';
 
 	const inputIcon = document.createElement('img');
-	inputIcon.src = '/assets/icons/inputs/success-icon.svg';
+	inputIcon.src = '/assets/icons/inputs/alert-check.svg';
 	inputIcon.classList.add(textInputStyles.inputIcon);
 	inputIcon.style.opacity = 0;
 
