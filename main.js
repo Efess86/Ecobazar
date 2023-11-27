@@ -93,6 +93,10 @@ const app = document.getElementById('app');
 // import { callPhone } from './components/header/callPhone/callPhone';
 // app.insertAdjacentHTML('beforeend', callPhone(2195550114, '(219) 555-0114'));
 
+// ================ Call Phone (header) ================
+// import { callPhoneSmall } from './components/header/callPhoneSmall/callPhoneSmall';
+// app.insertAdjacentHTML('beforeend', callPhoneSmall(2195550114, '(219) 555-0114', 'filter: brightness(0) invert(1); color:white;'));
+
 // ================ Favourites (header) ================
-import { favourites } from './components/header/favourites/favourites';
-app.insertAdjacentHTML('beforeend', favourites());
+// import { favourites } from './components/header/favourites/favourites';
+// app.insertAdjacentHTML('beforeend', favourites());
