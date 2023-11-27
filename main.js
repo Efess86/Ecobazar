@@ -86,5 +86,13 @@ const app = document.getElementById('app');
 
 
 // =============== Cart Amount (header) ===============
-import { cartAmount } from './components/header/cartAmmount/cartAmount';
-app.insertAdjacentHTML('beforeend', cartAmount('$', '34.28'));
+// import { cartAmount } from './components/header/cartAmmount/cartAmount';
+// app.insertAdjacentHTML('beforeend', cartAmount('$', '34.28'));
+
+// ================ Call Phone (header) ================
+// import { callPhone } from './components/header/callPhone/callPhone';
+// app.insertAdjacentHTML('beforeend', callPhone(2195550114, '(219) 555-0114'));
+
+// ================ Favourites (header) ================
+import { favourites } from './components/header/favourites/favourites';
+app.insertAdjacentHTML('beforeend', favourites());

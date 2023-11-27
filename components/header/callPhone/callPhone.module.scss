@@ -1,0 +1,26 @@
+@import '../../../css/variables/variables.scss';
+
+.callPhone {
+	width: max-content;
+	font-family: $font-family;
+	margin: 0 0 0 50px;
+
+	p {
+		color: $secondGreyColor;
+		font-size: 14px;
+		margin: 0 0 10px 3px;
+	}
+
+	a {
+		position: relative;
+		font-size: 20px;
+		font-weight: 500;
+		color: #000000;
+
+		img {
+			position: absolute;
+			top: -18px;
+			left: -50px;
+		}
+	}
+}
