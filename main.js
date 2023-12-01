@@ -100,3 +100,9 @@ const app = document.getElementById('app');
 // ================ Favourites (header) ================
 // import { favourites } from './components/header/favourites/favourites';
 // app.insertAdjacentHTML('beforeend', favourites());
+
+
+// ******************** Header top bar ********************
+import { topBarComponent } from './pages/headers/topBarComponent/topBarComponent';
+app.insertAdjacentHTML('beforeend', topBarComponent('SignIn', 'Sign Up'));
+

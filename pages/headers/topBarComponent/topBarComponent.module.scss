@@ -1,0 +1,26 @@
+@import '../../../css/variables/variables.scss';
+
+.topBarContainer {
+	display: flex;
+	justify-content: space-between;
+	padding: 12px 0;
+
+	.topBarLocation {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.topBarLanguage {
+		display: flex;
+		gap: 20px;
+	}
+}
+
+@media (max-width: 700px) {
+
+	.topBarLocation,
+	.topBarLanguage {
+		flex-direction: column;
+	}
+}
