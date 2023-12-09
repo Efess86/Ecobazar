@@ -1,9 +1,12 @@
 @import '../../../css/variables/variables.scss';
 
 .topBarContainer {
+	max-width: 1320px;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	padding: 12px 0;
+	margin: 0px auto;
 
 	.topBarLocation {
 		display: flex;

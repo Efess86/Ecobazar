@@ -104,5 +104,13 @@ const app = document.getElementById('app');
 
 // ******************** Header top bar ********************
 import { topBarComponent } from './pages/headers/topBarComponent/topBarComponent';
-app.insertAdjacentHTML('beforeend', topBarComponent('SignIn', 'Sign Up'));
+app.insertAdjacentHTML('beforeend', topBarComponent(
+	'SignIn',
+	'Sign Up',
+	'filter: brightness(0) invert(1);',
+	'background-color: #00B207; color: #FFFFFF;',
+	'color:#FFFFFF;',
+	'color:#000000;',
+	'color:#FFFFFF;'
+));
 
