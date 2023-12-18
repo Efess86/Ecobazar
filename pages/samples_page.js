@@ -3,7 +3,6 @@ import sampleStyles from './sample.module.scss';
 import { cardSmall } from "../components/cards/card-small";
 import { cardMedium } from "../components/cards/card-medium";
 import { cardLarge } from '../components/cards/card-large';
-// import { setTimer } from "../components/timer/timer";
 
 
 import { btnSmallFill, btnSmallBorder, btnSmallGhost } from "../components/buttons/btn-small";

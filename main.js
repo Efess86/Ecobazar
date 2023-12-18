@@ -103,14 +103,23 @@ const app = document.getElementById('app');
 
 
 // ******************** Header top bar ********************
-import { topBarComponent } from './pages/headers/topBarComponent/topBarComponent';
+import { topBarComponent } from './pages/headers/bars/topBarComponent/topBarComponent';
 app.insertAdjacentHTML('beforeend', topBarComponent(
-	'SignIn',
-	'Sign Up',
-	'filter: brightness(0) invert(1);',
-	'background-color: #00B207; color: #FFFFFF;',
-	'color:#FFFFFF;',
-	'color:#000000;',
-	'color:#FFFFFF;'
+
+	// 								----- Top bar -----
+	'SignIn', 										// Login text
+	'Sign Up', 										// Register text
+	'color:#FFFFFF;', 								// styles of login and register
+	'filter: brightness(0) invert(1);', 			// Location icon color
+	'background-color: #00B207; color: #FFFFFF; ',  // background-color and text color
+	'color:#FFFFFF;', 								// styles of select
+	'color:#000000;', 								// styles of options
+
+	// 								----- Middle bar -----
+	'background-color: #ffffff;',					// background-color and text color
+	'Search...',									// search placeholder text
+	'$',											// currency sign
+	'29.99',											// currency number
+	'4'
 ));
 
