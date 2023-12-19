@@ -119,7 +119,6 @@ app.insertAdjacentHTML('beforeend', topBarComponent(
 	'background-color: #ffffff;',					// background-color and text color
 	'Search...',									// search placeholder text
 	'$',											// currency sign
-	'29.99',											// currency number
-	'4'
+	'29.99',										// currency number
+	'4'												// number of products added in basket
 ));
-
