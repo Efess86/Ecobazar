@@ -25,14 +25,15 @@
 
 
 .topBarContainer,
-.middleBarContainer {
+.middleBarContainer,
+.bottomBarContainer {
 	max-width: 1320px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	padding: 12px 10px;
 	margin: 0px auto;
-
+	align-items: center;
 }
 
 
@@ -67,7 +68,7 @@
 	gap: 20px;
 }
 
-.logoContainer {
+.middleBarLogo {
 
 	a {
 		display: flex;
@@ -93,7 +94,7 @@
 	}
 }
 
-.userNav {
+.middleBarNav {
 	display: flex;
 	gap: 16px;
 
@@ -104,7 +105,7 @@
 	}
 }
 
-.userBasket {
+.middleBarBasket {
 	display: flex;
 	gap: 12px;
 	border-left: 1px solid #CCCCCC;
@@ -118,5 +119,29 @@
 				animation: scale 1s;
 			}
 		}
+	}
+}
+
+// Bottom bar =======
+.bottomBarContainer {
+	gap: 20px;
+	min-height: 55px;
+	background-color: $greyColor;
+	padding: 0 10px;
+}
+
+.bottomBarBurger {
+	max-width: 64px;
+	width: 100%;
+	min-height: 56px;
+	background-color: $primaryColor;
+
+	span {
+		display: block;
+		width: 20px;
+		height: 1.5px;
+		background-color: #FFFFFF;
+		border-radius: 10px;
+		margin: 32px auto;
 	}
 }

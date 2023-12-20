@@ -4,6 +4,7 @@ import { search } from "../../../../components/header/search/search";
 import { cartAmount } from "../../../../components/header/cartAmmount/cartAmount";
 import { cartIcon } from "../../../../components/header/cartIcon/cartIcon";
 import { favourites } from "../../../../components/header/favourites/favourites";
+import { burgerIcon } from "../../../../components/header/burgerIcon/burgerIcon";
 
 import barStyles from './topBarComponent.module.scss';
 
@@ -21,7 +22,8 @@ export const topBarComponent = (
 	placeholder,
 	currencySign,
 	currencyNumber,
-	itemsAmount
+	itemsAmount,
+	bottomBarWrapper
 ) => {
 
 	return `
@@ -42,25 +44,34 @@ export const topBarComponent = (
 		</div>
 
 		<div style="${middleBarWrapper}">
+
 			<div class="${barStyles.middleBarContainer}">
-				<div class="${barStyles.logoContainer}">
+				<div class="${barStyles.middleBarLogo}">
 					<a href="#">
 						<img src="/assets/logo.svg" alt="main logo">
 						<h1>Ecobazar</h1>
 					</a>
 				</div>
+
 				${search(placeholder)}
 
-				<div class="${barStyles.userNav}">
+				<div class="${barStyles.middleBarNav}">
 					${favourites()} 
-					<div class="${barStyles.userBasket}">
+					<div class="${barStyles.middleBarBasket}">
 						${cartIcon(itemsAmount)}
 						${cartAmount(currencySign, currencyNumber)}
 					</div>
-
 				</div>
 
 			</div>
+
 		</div>
+
+		<div style="${bottomBarWrapper}">
+			<div class="${barStyles.bottomBarContainer}">
+					${burgerIcon()}
+			</div>
+		</div>
+
 	`;
 }

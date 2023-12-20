@@ -116,9 +116,12 @@ app.insertAdjacentHTML('beforeend', topBarComponent(
 	'color:#000000;', 								// styles of options
 
 	// 								----- Middle bar -----
-	'background-color: #ffffff;',					// background-color and text color
+	'background-color: #ffffff;',					// background-color
 	'Search...',									// search placeholder text
 	'$',											// currency sign
 	'29.99',										// currency number
-	'4'												// number of products added in basket
+	'4',											// number of products added in basket
+
+	// 								----- Bottom bar -----
+	'background-color: #F1F1F1;'					// background-color
 ));
