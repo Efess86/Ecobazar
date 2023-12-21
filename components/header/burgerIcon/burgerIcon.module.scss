@@ -10,6 +10,35 @@
 	position: relative;
 	cursor: pointer;
 
+	position: relative;
+
+	.allCategories {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		width: max-content;
+		height: 55px;
+		position: absolute;
+		top: 0;
+		left: 55px;
+		padding: 0 24px 0 8px;
+		background-color: $primaryColor;
+		color: #FFFFFF;
+
+		h2 {
+			font: 500 14px $font-family;
+			user-select: none;
+		}
+
+		img {
+			width: 10px;
+			height: 10px;
+			transition: transform 0.6s cubic-bezier(0.2, 0.64, 0.48, 1.24);
+			transform: rotate(0deg);
+
+		}
+	}
+
 	input {
 		display: none;
 
@@ -81,5 +110,10 @@
 				}
 			}
 		}
+
+		&:checked+div+div img {
+			transform: rotate(180deg);
+		}
+
 	}
 }
