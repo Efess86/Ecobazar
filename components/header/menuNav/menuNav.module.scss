@@ -1,0 +1,42 @@
+@import '../../../css/variables/variables.scss';
+
+.nav {
+	display: flex;
+	gap: 32px;
+
+	div {
+		position: relative;
+
+		&:hover .subMenu {
+			display: flex;
+
+		}
+
+		a {
+			font: 500 14px $font-family;
+			color: $secondGreyColor;
+			transition: .3s ease-in-out;
+
+			&:hover {
+				color: $primaryColor;
+			}
+
+
+
+		}
+
+		.subMenu {
+			display: none;
+			flex-direction: column;
+			gap: 10px;
+			background-color: $greyColor;
+			padding: 25px 10px 10px 10px;
+			width: 150px;
+
+			position: absolute;
+			top: 19px;
+			left: -24px;
+
+		}
+	}
+}

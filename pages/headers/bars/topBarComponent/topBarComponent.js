@@ -5,8 +5,10 @@ import { cartAmount } from "../../../../components/header/cartAmmount/cartAmount
 import { cartIcon } from "../../../../components/header/cartIcon/cartIcon";
 import { favourites } from "../../../../components/header/favourites/favourites";
 import { burgerIcon } from "../../../../components/header/burgerIcon/burgerIcon";
+import { menuNav } from "../../../../components/header/menuNav/menuNav";
 
 import barStyles from './topBarComponent.module.scss';
+
 
 export const topBarComponent = (
 	//Top bar ----
@@ -23,6 +25,7 @@ export const topBarComponent = (
 	currencySign,
 	currencyNumber,
 	itemsAmount,
+	// Bottom bar ----
 	bottomBarWrapper
 ) => {
 
@@ -70,6 +73,7 @@ export const topBarComponent = (
 		<div style="${bottomBarWrapper}">
 			<div class="${barStyles.bottomBarContainer}">
 					${burgerIcon()}
+					${menuNav()}
 			</div>
 		</div>
 
