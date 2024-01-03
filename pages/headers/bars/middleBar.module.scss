@@ -1,0 +1,90 @@
+@import '../../../css/variables/variables.scss';
+
+@keyframes scale {
+	0% {
+		transform: scale(1);
+	}
+
+	25% {
+		transform: scale(1.1);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+	75% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+
+}
+
+
+.middleBarContainer {
+	max-width: 1320px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0px auto;
+	align-items: center;
+	gap: 20px;
+	padding: 24px 10px;
+}
+
+.middleBarLogo {
+
+	a {
+		display: flex;
+		gap: 8px;
+		align-items: center;
+		transition: .3s ease-in-out;
+
+		img {
+			width: 32px;
+			height: 32px;
+			overflow: hidden;
+			object-fit: cover;
+		}
+
+		h1 {
+			color: $headerLogoTitleColor;
+			font: 500 32px $font-family;
+		}
+
+		&:hover {
+			animation: scale 1s;
+		}
+	}
+}
+
+.middleBarNav {
+	display: flex;
+	gap: 16px;
+
+	>div:first-of-type {
+		&:hover {
+			animation: scale 1s;
+		}
+	}
+}
+
+.middleBarBasket {
+	display: flex;
+	gap: 12px;
+	border-left: 1px solid #CCCCCC;
+	height: 33px;
+	padding: 0 0 0 16px;
+
+	&:hover {
+
+		div:first-child {
+			p {
+				animation: scale 1s;
+			}
+		}
+	}
+}

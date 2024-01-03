@@ -1,0 +1,30 @@
+@import '../../../css/variables/variables.scss';
+
+.bottomBarContainer {
+	max-width: 1320px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0px auto;
+	align-items: center;
+	gap: 20px;
+	min-height: 55px;
+	background-color: $greyColor;
+	padding: 0 10px;
+}
+
+.bottomBarBurger {
+	max-width: 64px;
+	width: 100%;
+	min-height: 56px;
+	background-color: $primaryColor;
+
+	span {
+		display: block;
+		width: 20px;
+		height: 1.5px;
+		background-color: #FFFFFF;
+		border-radius: 10px;
+		margin: 32px auto;
+	}
+}

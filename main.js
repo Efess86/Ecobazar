@@ -103,25 +103,46 @@ const app = document.getElementById('app');
 
 
 // ******************** Header top bar ********************
-import { topBarComponent } from './pages/headers/bars/topBarComponent/topBarComponent';
-app.insertAdjacentHTML('beforeend', topBarComponent(
+// import { topBar } from './pages/headers/bars/topBarComponent/topBarComponent';
+// app.insertAdjacentHTML('beforeend', topBarComponent(
 
-	// 								----- Top bar -----
+// 	// 								----- Top bar -----
+// 	'SignIn', 										// Login text
+// 	'Sign Up', 										// Register text
+// 	'color:#FFFFFF;', 								// styles of login and register
+// 	'filter: brightness(0) invert(1);', 			// Location icon color
+// 	'background-color: #00B207; color: #FFFFFF; ',  // background-color and text color
+// 	'color:#FFFFFF;', 								// styles of select
+// 	'color:#000000;', 								// styles of options
+
+// 	// 								----- Middle bar -----
+// 	'background-color: #ffffff;',					// background-color
+// 	'Search...',									// search placeholder text
+// 	'$',											// currency sign
+// 	'29.99',										// currency number
+// 	'4',											// number of products added in basket
+
+// 	// 								----- Bottom bar -----
+// 	'background-color: #F1F1F1;'					// background-color
+// ));
+
+import { greenHeader } from './pages/headers/greenHeader';
+
+app.insertAdjacentHTML('beforeend', greenHeader(
+	// ============================== Top bar ===========================================
+	'background-color: #00B207; color: #FFFFFF; ',  // background-color and text color
+	'filter: brightness(0) invert(1);', 			// Location icon color
+	'color:#FFFFFF;', 								// styles of select
+	'color:#000000;', 								// styles of options
 	'SignIn', 										// Login text
 	'Sign Up', 										// Register text
 	'color:#FFFFFF;', 								// styles of login and register
-	'filter: brightness(0) invert(1);', 			// Location icon color
-	'background-color: #00B207; color: #FFFFFF; ',  // background-color and text color
-	'color:#FFFFFF;', 								// styles of select
-	'color:#000000;', 								// styles of options
-
-	// 								----- Middle bar -----
+	// ============================= Middle bar =========================================
 	'background-color: #ffffff;',					// background-color
 	'Search...',									// search placeholder text
-	'$',											// currency sign
-	'29.99',										// currency number
 	'4',											// number of products added in basket
-
-	// 								----- Bottom bar -----
+	'$',											// currency symbol
+	'29.99',										// currency number
+	// ============================= Bottom bar ==========================================
 	'background-color: #F1F1F1;'					// background-color
 ));
