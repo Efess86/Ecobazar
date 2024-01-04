@@ -129,20 +129,20 @@ const app = document.getElementById('app');
 import { greenHeader } from './pages/headers/greenHeader';
 
 app.insertAdjacentHTML('beforeend', greenHeader(
-	// ============================== Top bar ===========================================
-	'background-color: #00B207; color: #FFFFFF; ',  // background-color and text color
+	// ================================ Top bar =========================================
+	'background-color: #00B207; color: #FFFFFF; ',  // Background-color and text color
 	'filter: brightness(0) invert(1);', 			// Location icon color
-	'color:#FFFFFF;', 								// styles of select
-	'color:#000000;', 								// styles of options
-	'SignIn', 										// Login text
-	'Sign Up', 										// Register text
-	'color:#FFFFFF;', 								// styles of login and register
-	// ============================= Middle bar =========================================
-	'background-color: #ffffff;',					// background-color
-	'Search...',									// search placeholder text
-	'4',											// number of products added in basket
-	'$',											// currency symbol
-	'29.99',										// currency number
-	// ============================= Bottom bar ==========================================
-	'background-color: #F1F1F1;'					// background-color
+	'color:#FFFFFF;', 								// Select styles
+	'color:#000000;', 								// Options styles
+	'Sign In ', 									// Login text
+	' Sign Up', 									// Register text
+	'color:#FFFFFF;', 								// Login and register styles
+	// =============================== Middle bar =======================================
+	'background-color: #ffffff;',					// Background-color
+	'Search...',									// Search placeholder text
+	'4',											// Number of products added in basket
+	'$',											// Currency symbol
+	'29.99',										// Currency number
+	// =============================== Bottom bar ========================================
+	'background-color: #F1F1F1;'					// Background-color
 ));

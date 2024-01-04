@@ -6,6 +6,10 @@
 
 	div {
 		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 50px;
 
 		&:hover .subMenu {
 			display: flex;
@@ -13,6 +17,7 @@
 		}
 
 		a {
+			position: relative;
 			font: 500 14px $font-family;
 			color: $secondGreyColor;
 			transition: .3s ease-in-out;
@@ -20,23 +25,25 @@
 			&:hover {
 				color: $primaryColor;
 			}
-
-
-
 		}
+
+		img {
+			margin: 0 0 0 7px;
+		}
+
 
 		.subMenu {
 			display: none;
 			flex-direction: column;
+			align-items: flex-start;
 			gap: 10px;
 			background-color: $greyColor;
 			padding: 25px 10px 10px 10px;
 			width: 150px;
 
 			position: absolute;
-			top: 19px;
+			top: 33px;
 			left: -24px;
-
 		}
 	}
 }

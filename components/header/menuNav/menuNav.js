@@ -10,6 +10,7 @@ export const menuNav = () => {
 
 		<div>
 			<a href="#">Shop</a>
+			<img src="/assets/icons/header/select-arrow-grey.svg" alt="select icon">
 			<div class="${menuNavStyles.subMenu}">
 				<a href="#">Vegetables</a>	
 				<a href="#">Fruits</a>	
@@ -21,6 +22,7 @@ export const menuNav = () => {
 
 		<div>
 			<a href="#">Pages</a>
+			<img src="/assets/icons/header/select-arrow-grey.svg" alt="select icon">
 			<div class="${menuNavStyles.subMenu}">
 				<a href="#">Order History</a>
 				<a href="#">Account Settings</a>
@@ -30,6 +32,7 @@ export const menuNav = () => {
 
 		<div>
 			<a href="#">Blog</a>
+			<img src="/assets/icons/header/select-arrow-grey.svg" alt="select icon">
 			<div class="${menuNavStyles.subMenu}">
 				<a href="#">Main Blog</a>
 				<a href="#">Cooking Blog</a>

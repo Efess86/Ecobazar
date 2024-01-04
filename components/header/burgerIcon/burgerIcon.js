@@ -5,7 +5,7 @@ export const burgerIcon = () => {
 
 	return `
 	<label class="${burgerStyles.menu}">
-		<input type="checkbox" checked>
+		<input type="checkbox" checked id="burger-menu-icon">
 		<div>
 			<span></span>
 			<span></span>

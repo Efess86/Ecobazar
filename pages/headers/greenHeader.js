@@ -2,10 +2,9 @@ import { topBar } from './bars/topBar';
 import { middleBar } from './bars/middleBar';
 import { bottomBar } from './bars/bottomBar';
 
-import headerStyles from './greenHeader.module.scss';
 
 export const greenHeader = (
-	// Top Bar ---------
+	// ------ Top Bar ------
 	topBarWrapper,
 	imgStyle,
 	selectStyle,
@@ -13,13 +12,13 @@ export const greenHeader = (
 	login,
 	register,
 	loginStyle,
-	// Middle Bar -------
+	// ------ Middle Bar ------
 	middleBarWrapper,
 	placeholder,
 	itemsAmount,
 	currencySign,
 	currencyNumber,
-	// Bottom Bar ------
+	// ------ Bottom Bar ------
 	bottomBarWrapper
 
 ) => {
