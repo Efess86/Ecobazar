@@ -1,1 +1,171 @@
 @import '../../../css/variables/variables.scss';
+
+.menu {
+	--front: #00B207;
+	--back: #999999;
+	--icon: white;
+	perspective: 600px;
+	width: 55px;
+	height: 55px;
+	position: relative;
+	cursor: pointer;
+
+	position: relative;
+
+	.allCategories {
+		z-index: 10;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		width: max-content;
+		height: 55px;
+		position: absolute;
+		top: 0;
+		left: 55px;
+		padding: 0 24px 0 8px;
+		background-color: $primaryColor;
+		color: #FFFFFF;
+
+		h2 {
+			font: 500 14px $font-family;
+			user-select: none;
+		}
+
+		img {
+			width: 10px;
+			height: 10px;
+			transition: transform 0.6s cubic-bezier(0.2, 0.64, 0.48, 1.24);
+			transform: rotate(180deg);
+
+		}
+	}
+
+	input {
+		display: none;
+
+		&+div {
+			span {
+				--rotateY: 0deg;
+				--background: var(--front);
+				transform: rotateY(var(--rotateY));
+				transform-style: preserve-3d;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: 0%;
+				background: var(--background);
+				backface-visibility: hidden;
+				transition: transform .6s cubic-bezier(.2, .64, .48, 1.24);
+
+				&:before,
+				&:after {
+					--rotate: 0deg;
+					content: '';
+					position: absolute;
+					width: 24px;
+					height: 1.5px;
+					border-radius: 1px;
+					top: 50%;
+					left: 50%;
+					background: var(--icon);
+					backface-visibility: hidden;
+					transform: translate(-50%, -50%) rotate(var(--rotate)) translateZ(16px);
+				}
+
+				&:first-child {
+					--background: var(--back);
+
+					&:before {
+						--rotate: -45deg;
+					}
+
+					&:after {
+						--rotate: 45deg;
+					}
+				}
+
+				&:last-child {
+					--rotateY: 180deg;
+
+					&:before {
+						box-shadow: 0 -7px 0 var(--icon), 0 7px 0 var(--icon);
+					}
+
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&:checked+div {
+			span {
+				&:first-child {
+					--rotateY: -180deg;
+				}
+
+				&:last-child {
+					--rotateY: 0deg;
+				}
+			}
+		}
+
+		&:checked+div+div img {
+			transform: rotate(0deg);
+		}
+
+		&:checked+div+div+div {
+			transform: translateX(-100%);
+			opacity: 0;
+		}
+
+	}
+}
+
+
+// ============= Categories ============
+
+.categories {
+	transform: translateX(0);
+	transition: .6s cubic-bezier(.2, .64, .48, 1.24);
+	opacity: 1;
+	z-index: 5;
+
+	font: 400 14px $font-family;
+	width: max-content;
+	border: 2px solid #E6E6E6;
+
+	position: absolute;
+	top: 55px;
+	left: 0;
+
+	div {
+		max-width: 312px;
+		width: 100%;
+		min-height: 56px;
+		margin: 0 30px 0 0;
+
+		display: flex;
+		align-items: center;
+		cursor: default;
+
+		a {
+			color: #1A1A1A;
+			transition: .3s ease-in-out;
+
+			&:hover {
+				color: $primaryColor;
+			}
+
+			img {
+				margin: 0 12px 0 20px;
+			}
+		}
+	}
+}
+
+.viewMore {
+	border-top: 2px solid #E6E6E6;
+}

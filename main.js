@@ -144,5 +144,8 @@ app.insertAdjacentHTML('beforeend', greenHeader(
 	'$',											// Currency symbol
 	'29.99',										// Currency number
 	// =============================== Bottom bar ========================================
-	'background-color: #F1F1F1;'					// Background-color
+	'background-color: #F1F1F1;',					// Background-color
+	'(219) 555-0114',							    // phone number in href="tel:+1-650-253-0000"
+	'(219) 555-0114',								// phone number to show
+	'' 												// phone styles
 ));

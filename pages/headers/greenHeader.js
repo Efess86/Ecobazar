@@ -19,12 +19,15 @@ export const greenHeader = (
 	currencySign,
 	currencyNumber,
 	// ------ Bottom Bar ------
-	bottomBarWrapper
+	bottomBarWrapper,
+	telNumberLink,
+	telNumber,
+	imgCallStyle
 
 ) => {
 	return `
 		${topBar(topBarWrapper, imgStyle, selectStyle, optionStyle, login, register, loginStyle)}
 		${middleBar(middleBarWrapper, placeholder, itemsAmount, currencySign, currencyNumber)}
-		${bottomBar(bottomBarWrapper)}
+		${bottomBar(bottomBarWrapper, telNumberLink, telNumber, imgCallStyle)}
 	`;
 }
