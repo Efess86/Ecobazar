@@ -21,11 +21,12 @@ export const topBar = (
 					<a href="https://maps.app.goo.gl/boHLTLebzQRciDzh6" target="_blank">
 						<img src="assets/icons/header/location.svg" alt="location icon" style="${imgStyle}">
 						<p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
+						<span>Location</span>
 					</a>
 				</div>
 				<div class="${barStyles.topBarLanguage}">
 					${setCurrencyLanguage(selectStyle, optionStyle)}
-					|
+					<span>|</span>
 					${signInSignUp(login, register, loginStyle)}
 				</div>
 			</div>

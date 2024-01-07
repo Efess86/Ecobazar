@@ -45,6 +45,10 @@
 		gap: 8px;
 		font: 300 12px $font-family;
 		color: #FFFFFF;
+
+		span {
+			display: none;
+		}
 	}
 }
 
@@ -55,9 +59,24 @@
 
 @media (max-width: 700px) {
 
-	.topBarLocation,
 	.topBarLanguage {
-		flex-direction: column;
+		gap: 7px;
+
+		span {
+			display: none;
+		}
+	}
+
+	.topBarLocation {
+		a {
+			p {
+				display: none;
+			}
+
+			span {
+				display: inline;
+			}
+		}
 	}
 }
 
