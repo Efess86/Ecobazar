@@ -2,6 +2,8 @@
 
 
 .cartAmount {
+	display: block;
+
 	span {
 		font: 400 11px $font-family;
 		color: $inputGrey;
@@ -10,5 +12,11 @@
 	p {
 		font: 500 14px $font-family;
 		color: #000000;
+	}
+}
+
+@media (max-width:950px) {
+	.cartAmount {
+		display: none;
 	}
 }
