@@ -116,11 +116,11 @@
 			transform: rotate(0deg);
 		}
 
-		&:checked+div+div+div {
-			transform: translateX(-100%);
-			opacity: 0;
-			pointer-events: none;
-		}
+		// &:checked+div+div+div {
+		// 	transform: translateX(-100%);
+		// 	opacity: 0;
+		// 	pointer-events: none;
+		// }
 
 	}
 }
@@ -129,42 +129,56 @@
 // ============= Categories ============
 
 .categories {
-	transform: translateX(0);
-	transition: .6s cubic-bezier(.2, .64, .48, 1.24);
-	opacity: 1;
+	transform: translateX(-100%);
+	opacity: 0;
+	pointer-events: none;
+
 	z-index: 5;
+	transition: .6s cubic-bezier(.2, .64, .48, 1.24);
 
 	font: 400 14px $font-family;
 	width: max-content;
 	border: 2px solid #E6E6E6;
 
 	position: absolute;
-	top: 55px;
+	top: 60px;
 	left: 0;
 
-	div {
+	a {
 		max-width: 312px;
 		width: 100%;
 		min-height: 56px;
 		margin: 0 30px 0 0;
+		transition: .3s ease-in-out;
 
 		display: flex;
 		align-items: center;
-		cursor: default;
 
-		a {
-			color: #1A1A1A;
-			transition: .3s ease-in-out;
+		&:hover {
+			background-color: $primaryColor;
+		}
 
-			&:hover {
-				color: $primaryColor;
+		&:hover>div {
+			color: #FFFFFF;
+
+			img {
+				filter: brightness(0) invert(1);
 			}
+		}
+
+		div {
+			color: #1A1A1A;
 
 			img {
 				margin: 0 12px 0 20px;
 			}
 		}
 	}
+}
+
+.catMenuActive {
+	transform: translateX(0);
+	opacity: 1;
 }
 
 .viewMore {

@@ -7,8 +7,6 @@ import barStyles from './bottomBar.module.scss';
 
 
 export const bottomBar = (bottomBarWrapper, telNumberLink, telNumber, imgStyle) => {
-
-
 	return `
 	<div style="${bottomBarWrapper}">
 			<div class="${barStyles.bottomBarContainer}">

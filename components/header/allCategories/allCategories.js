@@ -5,7 +5,7 @@ export const allCategories = () => {
 
 	return `
 	<label class="${categoriesStyles.menu}">
-		<input type="checkbox" checked id="burger-menu-icon">
+		<input class="allCategoriesInput" type="checkbox" checked id="burger-menu-icon">
 		<div>
 			<span></span>
 			<span></span>
@@ -15,70 +15,70 @@ export const allCategories = () => {
 			<img src="assets/icons/header/select-arrow.svg" alt="select icon">
 		</div>
 
-		<div class="${categoriesStyles.categories}">
+		<div class="allCategoriesMenu ${categoriesStyles.categories}">
 
-			<div>
-				<a href="#">
+			<a>
+				<div href="#">
 					<img src="assets/icons/header/allCategories/vegetables.svg" alt="vegetables icon">
 					Vegetables
-				</a>
-			</div>
+				</div>
+			</a>
 
-			<div>
-				<a href="#">
+			<a>
+				<div href="#">
 					<img src="assets/icons/header/allCategories/fish.svg" alt="fish icon">
 					Fish
-				</a>
-			</div>
+				</div>
+			</a>
 
-			<div>
-				<a href="#">
+			<a>
+				<div href="#">
 					<img src="assets/icons/header/allCategories/chicken-meat.svg" alt="chicken icon">
 					Chicken & Meat
-				</a>
-			</div>
+				</div>
+			</a>
 
-			<div>
-				<a href="#">
+			<a>
+				<div href="#">
 					<img src="assets/icons/header/allCategories/drink-water.svg" alt="drink-water icon">
 					Drink & Water
-				</a>
-			</div>
+				</div>
+			</a>
 
-			<div>
-				<a href="#">
+			<a>
+				<div href="#">
 					<img src="assets/icons/header/allCategories/yogurt-ice-cream.svg" alt="yogurt-ice-cream icon">
 					Yogurt & Ice Cream
-				</a>
-			</div>
+				</div>
+			</a>
 
-			<div>
-				<a href="#">
+			<a>
+				<div href="#">
 					<img src="assets/icons/header/allCategories/cake-bread.svg" alt="cake-bread icon">
 					Cake & Bread
-				</a>
-			</div>
+				</div>
+			</a>
 
-			<div>
-				<a href="#">
+			<a>
+				<div href="#">
 					<img src="assets/icons/header/allCategories/butter-cream.svg" alt="butter-cream icon">
 					Butter & Cream
-				</a>
-			</div>
+				</div>
+			</a>
 
-			<div>
-				<a href="#">
+			<a>
+				<div href="#">
 					<img src="assets/icons/header/allCategories/cooking.svg" alt="cooking icon">
 					Cooking
-				</a>
-			</div>
+				</div>
+			</a>
 
-			<div class="${categoriesStyles.viewMore}">
-				<a href="#">
+			<a class="${categoriesStyles.viewMore}">
+				<div href="#">
 					<img src="assets/icons/header/allCategories/view-more.svg" alt="view more icon">
 					View all Category
-				</a>
-			</div>
+				</div>
+			</a>
 
 		</div>
 

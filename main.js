@@ -149,3 +149,16 @@ app.insertAdjacentHTML('beforeend', greenHeader(
 	'(219) 555-0114',								// phone number to show
 	'' 												// phone styles
 ));
+
+document.addEventListener('click', (event) => {
+	const checkbox = document.querySelector('.allCategoriesInput');
+	const categoriesMenu = document.querySelector('.allCategoriesMenu');
+
+	if (checkbox.checked === false) {
+		categoriesMenu.classList.add('catMenuActive');
+	} else if (checkbox.checked === true && !categoriesMenu.contains(event.target)) {
+		categoriesMenu.classList.remove('catMenuActive');
+	}
+});
+
+

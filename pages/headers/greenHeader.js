@@ -4,7 +4,7 @@ import { bottomBar } from './bars/bottomBar';
 
 
 export const greenHeader = (
-	// ------ Top Bar ------
+	// ------- Top Bar -------
 	topBarWrapper,
 	imgStyle,
 	selectStyle,
@@ -28,6 +28,6 @@ export const greenHeader = (
 	return `
 		${topBar(topBarWrapper, imgStyle, selectStyle, optionStyle, login, register, loginStyle)}
 		${middleBar(middleBarWrapper, placeholder, itemsAmount, currencySign, currencyNumber)}
+		${bottomBar(bottomBarWrapper, telNumberLink, telNumber, imgCallStyle)}
 		`;
 }
-// ${bottomBar(bottomBarWrapper, telNumberLink, telNumber, imgCallStyle)}
