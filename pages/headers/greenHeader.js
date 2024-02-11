@@ -4,25 +4,25 @@ import { bottomBar } from './bars/bottomBar';
 
 
 export const greenHeader = (
-	// ------- Top Bar -------
-	topBarWrapper,
-	imgStyle,
-	selectStyle,
-	optionStyle,
-	login,
-	register,
-	loginStyle,
-	// ------ Middle Bar ------
-	middleBarWrapper,
-	placeholder,
-	itemsAmount,
-	currencySign,
-	currencyNumber,
-	// ------ Bottom Bar ------
-	bottomBarWrapper,
-	telNumberLink,
-	telNumber,
-	imgCallStyle
+	{// ------- Top Bar -------
+		topBarWrapper,
+		imgStyle,
+		selectStyle,
+		optionStyle,
+		login,
+		register,
+		loginStyle,
+		// ------ Middle Bar ------
+		middleBarWrapper,
+		placeholder,
+		itemsAmount,
+		currencySign,
+		currencyNumber,
+		// ------ Bottom Bar ------
+		bottomBarWrapper,
+		telNumberLink,
+		telNumber,
+		imgCallStyle }
 
 ) => {
 	return `

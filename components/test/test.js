@@ -1,16 +1,12 @@
 import styles from './test.module.scss';
 
 
-export const test = () => {
+export const createElem = (type, content, attName, attValue, className, parrentId) => {
+	const element = document.createElement(type);
+	element.setAttribute(attName, attValue);
+	element.className = styles.headLabel;
+	element.textContent = content;
 
-	return `
-	<label class="${styles.menu}">
-		<input type="checkbox" checked>
-		<div>
-			<span></span>
-			<span></span>
-		</div>
-	</label>
-
-	`;
+	const parrentElem = document.getElementById(parrentId);
+	parrentElem.appendChild(element);
 };

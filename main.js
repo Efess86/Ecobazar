@@ -128,7 +128,7 @@ const app = document.getElementById('app');
 
 import { greenHeader } from './pages/headers/greenHeader';
 
-app.insertAdjacentHTML('beforeend', greenHeader(
+const greenHeaderComponent = () => greenHeader(
 	// ================================ Top bar =========================================
 	'background-color: #00B207; color: #FFFFFF; ',  // Background-color and text color
 	'filter: brightness(0) invert(1);', 			// Location icon color
@@ -148,9 +148,9 @@ app.insertAdjacentHTML('beforeend', greenHeader(
 	'(219) 555-0114',							    // phone number in href="tel:+1-650-253-0000"
 	'(219) 555-0114',								// phone number to show
 	'' 												// phone styles
-));
+)
 
-document.addEventListener('click', (event) => {
+const clickListener = (event) => {
 	const checkbox = document.querySelector('.allCategoriesInput');
 	const categoriesMenu = document.querySelector('.allCategoriesMenu');
 
@@ -159,6 +159,19 @@ document.addEventListener('click', (event) => {
 	} else if (checkbox.checked === true && !categoriesMenu.contains(event.target)) {
 		categoriesMenu.classList.remove('catMenuActive');
 	}
-});
+}
+
+const proxyFunc = (componentFunc, eventListenerConfig) => {
+	const { eventName, listenerFunc } = eventListenerConfig;
+
+	app.insertAdjacentHTML('beforeend', componentFunc())
+	document.addEventListener(eventName, listenerFunc);
+}
+
+proxyFunc(greenHeaderComponent, { eventName: 'click', listenerFunc: clickListener });
 
 
+
+// import { createElem } from './components/test/test';
+
+// createElem('span', 'test 1231231', 'span-info', 'Kjj123', 'head-label', 'app');
