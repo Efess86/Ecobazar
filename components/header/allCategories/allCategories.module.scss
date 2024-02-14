@@ -116,11 +116,11 @@
 			transform: rotate(0deg);
 		}
 
-		// &:checked+div+div+div {
-		// 	transform: translateX(-100%);
-		// 	opacity: 0;
-		// 	pointer-events: none;
-		// }
+		&:checked+div+div+div {
+			transform: translateX(-100%);
+			opacity: 0;
+			pointer-events: none;
+		}
 
 	}
 }
@@ -129,9 +129,9 @@
 // ============= Categories ============
 
 .categories {
-	transform: translateX(-100%);
-	opacity: 0;
-	pointer-events: none;
+	// transform: translateX(-100%);
+	// opacity: 0;
+	// pointer-events: none;
 
 	z-index: 5;
 	transition: .6s cubic-bezier(.2, .64, .48, 1.24);
@@ -176,9 +176,9 @@
 	}
 }
 
-.catMenuActive {
-	transform: translateX(0);
-	opacity: 1;
+.close {
+	background-color: red;
+	border: 2px solid green;
 }
 
 .viewMore {
