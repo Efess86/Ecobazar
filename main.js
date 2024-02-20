@@ -151,33 +151,16 @@ app.insertAdjacentHTML('beforeend', greenHeader(
 ));
 
 
+// document.addEventListener('change', () => {
+// 	const element = document.getElementById('allCategoriesMenu');
+// 	const checkbox = document.getElementById('burger-menu-icon');
 
-document.addEventListener('click', (event) => {
-	const element = document.getElementById('allCategoriesMenu');
-	const checkbox = document.getElementById('burger-menu-icon');
+// 	if (checkbox.checked) {
+// 		console.log('checked');
+// 		element.style = 'transform: translateX(-100%); opacity: 0; pointer-events: none;';
+// 	} else {
+// 		element.style = 'transform: translateX(0); opacity: 1; pointer-events: auto;';
+// 		console.log('not checked');
+// 	}
 
-	if (!element.contains(event.target) && !checkbox.contains(event.target)) {
-		checkbox.checked = true;
-		element.style = 'transform: translateX(-100%); opacity: 0; pointer-events: none;';
-	}
-
-});
-
-
-document.addEventListener('change', () => {
-	const element = document.getElementById('allCategoriesMenu');
-	const checkbox = document.getElementById('burger-menu-icon');
-
-	if (checkbox.checked) {
-		console.log('checked');
-		element.style = 'transform: translateX(-100%); opacity: 0; pointer-events: none;';
-	} else if (!checkbox.checked) {
-		element.style = 'transform: translateX(0); opacity: 1; pointer-events: auto;';
-		console.log('not checked');
-	}
-
-});
-
-
-
-
+// });

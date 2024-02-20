@@ -21,3 +21,22 @@
 		}
 	}
 }
+
+
+@media (max-width: 1100px) {
+	.callPhoneSmall {
+		margin: 0;
+
+		a {
+			font-size: 0;
+
+			img {
+				position: relative;
+				top: 0;
+				left: 0;
+				width: 35px;
+				height: 35px;
+			}
+		}
+	}
+}

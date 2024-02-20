@@ -23,21 +23,21 @@ export const menuNav = () => {
 		<div>
 			<a href="#">Pages</a>
 			<img src="/assets/icons/header/select-arrow-grey.svg" alt="select icon">
-			<div class="${menuNavStyles.subMenu}">
-				<a href="#">Order History</a>
-				<a href="#">Account Settings</a>
-				<a href="#">FAQ</a>
-			</div>
+			<ul class="${menuNavStyles.subMenu}">
+				<li> <a href="#">Order History</a> </li>
+				<li> <a href="#">Account Settings</a> </li>
+				<li> <a href="#">FAQ</a> </li>
+			</ul>
 		</div>
 
 		<div>
 			<a href="#">Blog</a>
 			<img src="/assets/icons/header/select-arrow-grey.svg" alt="select icon">
-			<div class="${menuNavStyles.subMenu}">
-				<a href="#">Main Blog</a>
-				<a href="#">Cooking Blog</a>
-				<a href="#">Premium users</a>
-			</div>
+			<ul class="${menuNavStyles.subMenu}">
+				<li> <a href="#">Main Blog</a> </li>
+				<li> <a href="#">Cooking Blog</a> </li>
+				<li> <a href="#">Premium users</a> </li>
+			</ul>
 		</div>
 
 		<div>
