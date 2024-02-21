@@ -164,3 +164,8 @@ app.insertAdjacentHTML('beforeend', greenHeader(
 // 	}
 
 // });
+
+
+import { mobileBar } from './components/mobileBar/mobileBar';
+
+app.insertAdjacentHTML('beforeend', mobileBar());
