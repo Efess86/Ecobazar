@@ -1,11 +1,11 @@
 import categoriesStyles from './allCategories.module.scss';
 
 
-export const allCategories = () => {
+export const allCategories = (allCategoriesId) => {
 
 	return `
 	<label class="${categoriesStyles.menu}">
-		<input class="allCategoriesInput" type="checkbox" checked id="burger-menu-icon">
+		<input class="allCategoriesInput" type="checkbox" checked id="${allCategoriesId}">
 		<div>
 			<span></span>
 			<span></span>
@@ -15,7 +15,7 @@ export const allCategories = () => {
 			<img src="assets/icons/header/select-arrow.svg" alt="select icon">
 		</div>
 
-		<div id="allCategoriesMenu" class="${categoriesStyles.categories}">
+		<div class="${categoriesStyles.categories}">
 
 			<a href="#">
 				<div >

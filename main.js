@@ -126,8 +126,10 @@ const app = document.getElementById('app');
 // 	'background-color: #F1F1F1;'					// background-color
 // ));
 
-import { greenHeader } from './pages/headers/greenHeader';
 
+
+
+import { greenHeader } from './pages/headers/greenHeader';
 app.insertAdjacentHTML('beforeend', greenHeader(
 	// ================================ Top bar =========================================
 	'background-color: #00B207; color: #FFFFFF; ',  // Background-color and text color
@@ -147,7 +149,8 @@ app.insertAdjacentHTML('beforeend', greenHeader(
 	'background-color: #F1F1F1;',					// Background-color
 	'(219) 555-0114',							    // phone number in href="tel:+1-650-253-0000"
 	'(219) 555-0114',								// phone number to show
-	'' 												// phone styles
+	'', 											// phone styles
+	'allCategoryTopBarId'								// allCategories Id
 ));
 
 
@@ -165,7 +168,5 @@ app.insertAdjacentHTML('beforeend', greenHeader(
 
 // });
 
-
 import { mobileBar } from './components/mobileBar/mobileBar';
-
-app.insertAdjacentHTML('beforeend', mobileBar());
+app.insertAdjacentHTML('beforeend', mobileBar('allCategoriesMobileBarId'));

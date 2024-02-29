@@ -25,6 +25,7 @@ export const middleBar = (
 					</a>
 				</div>
 
+
 				${search(placeholder)}
 
 				<div class="${barStyles.middleBarNav}">

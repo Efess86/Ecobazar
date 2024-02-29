@@ -1,13 +1,18 @@
 .mobileBarContainer {
-	border-top: 1px solid rgb(226, 226, 226);
+	min-width: 100%;
+	width: 100%;
+	border-top: 2px solid rgb(226, 226, 226);
 	height: 60px;
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	background-color: #fff;
-}
+	display: flex;
 
-p {
-	margin: 10px 50px;
+
+	p {
+		margin: 10px 50px;
+	}
+
 }

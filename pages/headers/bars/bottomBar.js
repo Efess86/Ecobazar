@@ -6,11 +6,11 @@ import { callPhoneSmall } from '../../../components/header/callPhoneSmall/callPh
 import barStyles from './bottomBar.module.scss';
 
 
-export const bottomBar = (bottomBarWrapper, telNumberLink, telNumber, imgStyle) => {
+export const bottomBar = (bottomBarWrapper, telNumberLink, telNumber, imgStyle, allCategoriesId) => {
 	return `
 	<div style="${bottomBarWrapper}">
 			<div class="${barStyles.bottomBarContainer}">
-					${allCategories()}
+					${allCategories(allCategoriesId)}
 					${menuNav()}
 					${callPhoneSmall(telNumberLink, telNumber, imgStyle)}
 			</div>
