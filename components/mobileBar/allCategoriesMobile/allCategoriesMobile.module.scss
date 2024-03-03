@@ -1,0 +1,160 @@
+@import '../../../css/variables/variables.scss';
+
+.menu {
+	--front: #00B207;
+	--back: #999999;
+	--icon: white;
+	perspective: 600px;
+	width: 65px;
+	height: 65px;
+	position: relative;
+	cursor: pointer;
+
+
+	input {
+		display: none;
+
+		&+div {
+
+			span {
+				--rotateX: 0deg;
+				--background: var(--front);
+				transform: rotateX(var(--rotateX));
+				transform-style: preserve-3d;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: 0%;
+				background: var(--background);
+				backface-visibility: hidden;
+				transition: transform .6s cubic-bezier(.2, .64, .48, 1.24);
+				border-radius: 50%;
+
+				&:before,
+				&:after {
+					--rotate: 0deg;
+					content: '';
+					position: absolute;
+					width: 24px;
+					height: 1.5px;
+					border-radius: 1px;
+					top: 50%;
+					left: 50%;
+					background: var(--icon);
+					backface-visibility: hidden;
+					transform: translate(-50%, -50%) rotate(var(--rotate)) translateZ(16px);
+				}
+
+				&:first-child {
+					--background: var(--back);
+
+					&:before {
+						--rotate: -45deg;
+					}
+
+					&:after {
+						--rotate: 45deg;
+					}
+				}
+
+				&:last-child {
+					--rotateX: 180deg;
+
+					&:before {
+						box-shadow: 0 -7px 0 var(--icon), 0 7px 0 var(--icon);
+					}
+
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&:checked+div {
+			span {
+				&:first-child {
+					--rotateX: -180deg;
+				}
+
+				&:last-child {
+					--rotateX: 0deg;
+				}
+			}
+		}
+
+
+
+		&:checked+div+div {
+			transform: translateY(100%);
+			opacity: 0;
+			pointer-events: none;
+		}
+
+	}
+}
+
+
+// ============= Categories ============
+
+.categories {
+
+	z-index: 5;
+	transition: .6s cubic-bezier(.2, .64, .48, 1.24);
+
+	font: 400 14px $font-family;
+	width: max-content;
+	border: 2px solid #E6E6E6;
+
+	position: absolute;
+	bottom: 60px;
+	left: 0;
+
+	a {
+		max-width: 312px;
+		width: 100%;
+		min-height: 56px;
+		margin: 0 30px 0 0;
+		transition: .3s ease-in-out;
+
+		display: flex;
+		align-items: center;
+
+		&:hover {
+			background-color: $primaryColor;
+		}
+
+		&:hover>div {
+			color: #FFFFFF;
+
+			img {
+				filter: brightness(0) invert(1);
+			}
+		}
+
+		div {
+			color: #1A1A1A;
+
+			img {
+				margin: 0 12px 0 20px;
+			}
+		}
+	}
+}
+
+.viewMore {
+	background-color: rgb(239, 239, 239);
+}
+
+
+@media (max-width: 1100px) {
+	.menu {
+		margin: 0;
+
+		.allCategories {
+			display: none;
+		}
+	}
+}
