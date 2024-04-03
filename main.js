@@ -129,28 +129,28 @@ const app = document.getElementById('app');
 
 
 
-import { greenHeader } from './pages/headers/greenHeader';
-app.insertAdjacentHTML('beforeend', greenHeader(
-	// ================================ Top bar =========================================
-	'background-color: #00B207; color: #FFFFFF; ',  // Background-color and text color
-	'filter: brightness(0) invert(1);', 			// Location icon color
-	'color:#FFFFFF;', 								// Select styles
-	'color:#000000;', 								// Options styles
-	'Sign In ', 									// Login text
-	' Sign Up', 									// Register text
-	'color:#FFFFFF;', 								// Login and register styles
-	// =============================== Middle bar =======================================
-	'background-color: #ffffff;',					// Background-color
-	'Search...',									// Search placeholder text
-	'4',											// Number of products added in basket
-	'$',											// Currency symbol
-	'29.99',										// Currency number
-	// =============================== Bottom bar ========================================
-	'background-color: #F1F1F1;',					// Background-color
-	'(219) 555-0114',							    // phone number in href="tel:+1-650-253-0000"
-	'(219) 555-0114',								// phone number to show
-	'', 											// phone styles
-));
+// import { greenHeader } from './pages/headers/greenHeader';
+// app.insertAdjacentHTML('beforeend', greenHeader(
+// 	// ================================ Top bar =========================================
+// 	'background-color: #00B207; color: #FFFFFF; ',  // Background-color and text color
+// 	'filter: brightness(0) invert(1);', 			// Location icon color
+// 	'color:#FFFFFF;', 								// Select styles
+// 	'color:#000000;', 								// Options styles
+// 	'Sign In ', 									// Login text
+// 	' Sign Up', 									// Register text
+// 	'color:#FFFFFF;', 								// Login and register styles
+// 	// =============================== Middle bar =======================================
+// 	'background-color: #ffffff;',					// Background-color
+// 	'Search...',									// Search placeholder text
+// 	'4',											// Number of products added in basket
+// 	'$',											// Currency symbol
+// 	'29.99',										// Currency number
+// 	// =============================== Bottom bar ========================================
+// 	'background-color: #F1F1F1;',					// Background-color
+// 	'(219) 555-0114',							    // phone number in href="tel:+1-650-253-0000"
+// 	'(219) 555-0114',								// phone number to show
+// 	'', 											// phone styles
+// ));
 
 
 // document.addEventListener('change', () => {
@@ -167,7 +167,13 @@ app.insertAdjacentHTML('beforeend', greenHeader(
 
 // });
 
-import { mobileBar } from './components/mobileBar/mobileBar';
-app.insertAdjacentHTML('beforeend', mobileBar());
+// import { mobileBar } from './components/mobileBar/mobileBar';
+// app.insertAdjacentHTML('beforeend', mobileBar());
 
+// ================ Use fictions after component draw =================
+// import { search } from './components/header/search/search';
+// app.insertAdjacentHTML('beforeend', search('Search...'));
 
+// import { changeBackground } from './components/test/test';
+// changeBackground('btn', 'search', 'red');
+// =====================================================================

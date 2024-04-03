@@ -1,11 +1,9 @@
-import styles from './test.module.scss';
 
-
-export const test = () => {
-
-	return `
-		<div class="${styles.main}" id="test">
-			
-		</div>
-	`;
-};
+export const changeBackground = (btn, target, color) => {
+	//by click btn change color on target
+	const button = document.getElementById(btn);
+	const targetElement = document.getElementById(target);
+	button.addEventListener('click', () => {
+		targetElement.style.backgroundColor = color;
+	});
+}

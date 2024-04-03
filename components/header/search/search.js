@@ -7,7 +7,7 @@ export const search = (placeHolder) => {
 		<div class="${searchStyles.search}">
 			<img src="assets/icons/search.svg" alt="search icon">
 			<input type="text" id="search" placeholder="${placeHolder}">
-			<button>search</button>
+			<button id="btn">search</button>
 		</div>
 	`;
 }
